@@ -1,0 +1,43 @@
+@media (max-width: 768px)
+    .container
+        max-width: 700px
+        width: 92%
+    .header
+        &--fixed
+            position: fixed
+            top: 0
+            right: 0
+            left: 0
+            z-index: 99
+            box-shadow: 0 5px 5px -5px rgba(0, 0, 0, .3)
+        &__nav
+            position: fixed
+            top: 108px
+            left: 0
+            bottom: 0
+            width: 60%
+            transition: 0.5s
+            transform: translateX(-100%)
+            box-shadow: 5px 0 5px -5px rgba(0, 0, 0, .5)
+            &-menu
+                flex-direction: column
+                align-items: center
+                background-color: $bc-secondary
+                height: 100%
+                width: 100%
+            &-item
+                margin: 30px 0 30px 0
+                font-size: 14px
+            &-item:not(:last-child)
+                margin-right: 0
+            &--visible
+                transform: translateX(0%)
+        &__button
+            &--hidden
+                display: none
+            &--visible
+                display: flex
+    .menu-burger
+        display: block
+        color: 
+    

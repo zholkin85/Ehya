@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header header--fixed">
         <div class="container">
             <div class="header-wrapper">
                 <div class="header__logo">
@@ -22,32 +22,44 @@
                 </div>
                 <!-- /.header__logo -->
                 <nav class="header__nav">
-                    <ul class="header__nav-menu">
+                    <ul class="menu header__nav-menu">
                         <li class="header__nav-item">
                             <a href="#" class="header__nav-link">Домой</a>
                         </li>
                         <!-- /.header__nav-item -->
                         <li class="header__nav-item">
                             <a href="#" class="header__nav-link">Лэндинги</a>
+                            <img class="header__nav-link-angle" src="img/svg/angle-down.svg" alt="angle-down">
                         </li>
                         <!-- /.header__nav-item -->
                         <li class="header__nav-item">
                             <a href="#" class="header__nav-link">Страницы</a>
+                            <img class="header__nav-link-angle" src="img/svg/angle-down.svg" alt="angle-down">
                         </li>
                         <!-- /.header__nav-item -->
                         <li class="header__nav-item">
                             <a href="#" class="header__nav-link">Помощь</a>
                         </li>
                         <!-- /.header__nav-item -->
+                        <li class="header__nav-item">
+                            <button class="header__button header__button--visible button">Получить</button>
+                            <!-- /.header__button button -->
+                        </li>
+                        <!-- /.header__nav-item -->
                     </ul>
                     <!-- /.header__nav-menu -->
                 </nav>
                 <!-- /.header__nav -->
-                <div class="header__button button"></div>
+                <button class="header__button header__button--hidden button">Получить</button>
                 <!-- /.header__button button -->
+                <div class="menu-burger">
+                    <a href="#" class="menu-burger-btn">
+                        <span></span>
+                    </a>
+                </div>
             </div>
-            <!-- /.header-wrapper -->
         </div>
+        <!-- /.header-wrapper -->
         <!-- /.container -->
     </header>
     <!-- /.header -->
@@ -70,7 +82,7 @@
         </div>
         <!-- /.container -->
     </section>
-    <!-- /.hero -->
+    <!-- /.partner -->
     <section class="working">
         <div class="container">
             <div class="working-wrapper">
@@ -80,7 +92,7 @@
         </div>
         <!-- /.container -->
     </section>
-    <!-- /.hero -->
+    <!-- /.working -->
     <section class="portfolio">
         <div class="container">
             <div class="portfolio-wrapper">
@@ -90,7 +102,7 @@
         </div>
         <!-- /.container -->
     </section>
-    <!-- /.hero -->
+    <!-- /.portfolio -->
     <section class="testimonial">
         <div class="container">
             <div class="testimonial-wrapper">
@@ -100,7 +112,7 @@
         </div>
         <!-- /.container -->
     </section>
-    <!-- /.hero -->
+    <!-- /.testimonial -->
     <section class="social">
         <div class="container">
             <div class="social-wrapper">
@@ -110,7 +122,7 @@
         </div>
         <!-- /.container -->
     </section>
-    <!-- /.hero -->
+    <!-- /.social -->
     <section class="message">
         <div class="container">
             <div class="message-wrapper">
@@ -120,7 +132,7 @@
         </div>
         <!-- /.container -->
     </section>
-    <!-- /.hero -->
+    <!-- /.message -->
     <section class="footer">
         <div class="container">
             <div class="footer-wrapper">
@@ -130,7 +142,11 @@
         </div>
         <!-- /.container -->
     </section>
-    <!-- /.hero -->
+    <!-- /.footer -->
+
+
+    <script src="js/jQuery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
