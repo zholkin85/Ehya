@@ -1,5 +1,5 @@
 .header
-    padding: 25px 0 36px 0
+    padding: 26px 0 26px 0
     margin-bottom: 60px
     background-color: $bc-secondary
     &__logo
@@ -18,11 +18,34 @@
             list-style: none
         &-item:not(:last-child)
             margin-right: 37px
+        &-item
+            position: relative
+        &-item ul
+            position: absolute
+            max-width: 95px
+            list-style: none
+            background-color: $bc-secondary
+            overflow-wrap: break-word
+            opacity: 0
+            visibility: hidden
+            transition: 0.5s
+            z-index: 200
+        &-item li
+            margin-top: 10px
+        &-item a
+            color: inherit
+            text-decoration: none
+            font-weight: 600
+            font-size: 16px
+            line-height: 22px
+        &-item:hover ul
+            opacity: 1
+            visibility: visible
         &-link
             color: inherit
             text-decoration: none
-            font-weight: 600;
-            font-size: 16px;
+            font-weight: 600
+            font-size: 16px
             line-height: 22px
             &-angle
                 height: 14px

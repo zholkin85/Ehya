@@ -3,14 +3,13 @@
         max-width: 700px
         width: 92%
     .header
-        padding-top: 36px
+        padding: 36px 0 36px 0
         &--fixed
             position: fixed
             top: 0
             right: 0
             left: 0
             z-index: 99
-            box-shadow: 0 5px 5px -5px rgba(0, 0, 0, .3)
         &__nav
             position: fixed
             top: 104px
@@ -34,11 +33,20 @@
                 margin-right: 0
             &--visible
                 transform: translateX(0%)
+            &-item ul
+                left: 110px
+                top: -10px
+            &-link
+                &-angle
+                    transform: rotate(-90deg)
         &__button
             &--hidden
                 display: none
             &--visible
                 display: flex
+        
+    .scroll
+        box-shadow: 0 5px 5px -5px rgba(0, 0, 0, .3)
     .menu-burger
         display: block
         color: 

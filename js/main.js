@@ -4,4 +4,7 @@ $(document).ready(function() {
         $('.menu-burger-btn').toggleClass('menu-burger-btn--active')
         $('.header__nav').toggleClass('header__nav--visible')
     })
+    $(window).scroll(function() {
+        $('.header').toggleClass('scroll', $(this).scrollTop() > 100)
+    })
 })
