@@ -49,5 +49,53 @@
         box-shadow: 0 5px 5px -5px rgba(0, 0, 0, .3)
     .menu-burger
         display: block
-        color: 
-    
+    .hero
+        margin-top: 136px
+        margin-bottom: 0
+        &-wrapper
+            &-inner
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 2fr 1fr 1fr;
+                align-items: center;
+                justify-items: center;
+        &-description
+            max-width: 63%
+            align-items: center
+        &__title
+            text-align: center
+        &__image
+            position: relative
+            width: 100%
+            &-oval
+                max-width: 41%
+            &-pattern
+                    top: 46px
+                    right: 83%
+                    max-width: 88px
+            &-macbook
+                max-width: 88%
+            &-iphone
+                top: 118px
+                right: -47px
+    .partner
+        &-wrapper
+            display: flex
+            flex-direction: column
+            align-items: center
+        &-description
+            display: flex
+            flex-direction: column
+            align-items: center
+        &__title
+            text-align: center
+            max-width: 46%
+        &__text
+            text-align: center
+        &-logo
+            display: grid
+            grid-template-columns: 1fr 1fr
+            gap: 20px
+            &__link
+                &-airbnb
+                    display: none    

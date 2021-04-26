@@ -6,19 +6,9 @@
         &-outer
             max-width: 1440px
             margin: 0 auto
-            position: relative
-            &::before
-                content: ''
-                position: absolute
-                top: 127px
-                right: 0
-                width: 342px
-                height: 540px
-                background: url(../../img/svg/oval.svg)
-                background-repeat: no-repeat
-                background-size: cover
+            position: relative 
         &-inner
-            display: flex
+            display: grid
     &-description
         display: flex
         flex-direction: column
@@ -56,11 +46,17 @@
             background-color: #ffffff
             color: $color-desc
             border-color: $color-desc
+            width: fit-content
     &__image
         position: absolute;
         top: 0;
         right: 0;
         width: 50.5%
+        &-oval
+            position: absolute
+            top: 127px
+            right: 0
+            max-width: 50%
         &-pattern
             position: absolute
             display: inline-block
@@ -72,6 +68,8 @@
             top: 7px      
             right: 9px
             max-width: 100%
+        &-macbookmin
+            display: none
         &-iphone
             position: absolute
             top: 152px
