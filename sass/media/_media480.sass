@@ -1,3 +1,68 @@
 @media (max-width: 480px)
-        .container
-                width: 88%
+    .container
+        width: 93%
+    .header
+        padding: 17px 0 17px 0
+    .hero
+        margin-top: 99px
+        &-background
+            background-image: url(../../img/hero/hero-2.png)
+            top: 310px
+            background-size: 100%
+        &-wrapper
+            &-inner
+                grid-template-rows: 3fr 4fr min-content
+        &-description
+            max-width: 100%
+        &__title
+            font-size: 30px
+            line-height: 36px
+            margin-bottom: 9px
+            &-mini
+                font-size: 30px
+                padding-left: 27px
+        &__text
+            margin-bottom: 19px
+            font-size: 16px
+            line-height: 28px
+            text-align: center
+        &__button
+            padding: 13px 37px
+            font-size: 16px
+            line-height: 20px
+            &-down
+                padding: 15px 15px 10px 16px
+                grid-row: 3
+                margin-left: -5px
+                margin-top: 77px
+    .partner
+        &-description
+            margin-bottom: 16px
+        &__title
+            font-size: 27px
+            line-height: 33px
+            max-width: 78%
+        &__text
+            font-size: 17px
+            line-height: 26px
+            font-size: 13px
+            max-width: 100%
+@media (max-width: 407px)
+    .container
+        width: 93%
+    .hero
+        &-background
+            top: 418px
+        &-wrapper
+            &-inner
+                grid-template-rows: 3fr 4fr min-content    
+@media (max-width: 382px)
+    .hero
+        &-background
+            top: 369px
+        &-wrapper
+            &-inner
+                grid-template-rows: 3fr 2fr min-content
+        &__button
+            &-down
+                margin-top: 109px

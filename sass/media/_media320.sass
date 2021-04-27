@@ -1,11 +1,15 @@
-@media (max-width: 320px)
+@media (max-width: 328px)
+    .container
+        width: 88%
     .header
         padding: 17px 0 17px 0
     .hero
         margin-top: 99px
+        &-background
+            top: 418px
+            background-size: contain
         &-wrapper
             &-inner
-                grid-template-rows: 1fr
         &-description
             max-width: 100%
         &__title
@@ -28,26 +32,6 @@
                 grid-row: 3/4
                 margin-top: 67px
                 margin-left: -5px
-        &__image
-            &-oval
-                max-width: 48%
-                top: 80px
-                right: -14px
-            &-pattern
-                top: 11px
-                right: 83%
-            &-iphone
-                top: 47px
-                right: 46px
-                max-width: 33%
-            &-macbook
-                display: none
-            &-macbookmin
-                display: block
-                position: absolute
-                top: -7px
-                right: -20px
-                width: 114%
     .partner
         &-description
             margin-bottom: 16px

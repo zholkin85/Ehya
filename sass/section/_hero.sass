@@ -2,11 +2,19 @@
     position: relative
     padding: 0 0 100px 0
     margin-bottom: 106px
+    &-background
+        position: absolute
+        width: 100%
+        height: 95%
+        background-image: url(../../img/hero/hero2.png)
+        background-repeat: no-repeat
+        background-position: right 10px
+        background-size: contain
     &-wrapper
         &-outer
             max-width: 1440px
             margin: 0 auto
-            position: relative 
+            position: relative
         &-inner
             display: grid
     &-description
@@ -47,31 +55,4 @@
             color: $color-desc
             border-color: $color-desc
             width: fit-content
-    &__image
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 50.5%
-        &-oval
-            position: absolute
-            top: 127px
-            right: 0
-            max-width: 50%
-        &-pattern
-            position: absolute
-            display: inline-block
-            top: 109px
-            right: 89%
-            max-width: 102px
-        &-macbook
-            position: absolute
-            top: 7px      
-            right: 9px
-            max-width: 100%
-        &-macbookmin
-            display: none
-        &-iphone
-            position: absolute
-            top: 152px
-            right: 71%        
-            max-width: 30%
+    
