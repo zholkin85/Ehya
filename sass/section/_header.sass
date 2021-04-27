@@ -4,6 +4,9 @@
     background-color: $bc-secondary
     &__logo
         display: inline-block
+        +hover
+            transition: transform 0.1s linear
+            transform: scale(1.1)
         &-image
             max-width: 100%
     &-wrapper
@@ -56,6 +59,9 @@
         background-color: #fff
         color: #1565D8
         drop-shadow: (0px 10px 25px rgba(21, 37, 72, 0.1))
+        +hover
+            background-color: #1565D8
+            color: #fff
         &--visible
             display: none
 .menu-burger

@@ -1,12 +1,15 @@
 @mixin button 
     padding: 13px 24px;
-    border: 2px solid #1565D8;
-    border-radius: 8px;
-    text-align: center;
-    font-family: $font-primary;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 22px;
+    border: 2px solid #1565D8
+    border-radius: 8px
+    text-align: center
+    font-family: $font-primary
+    font-weight: bold
+    font-size: 16px
+    line-height: 22px
+    overflow: hidden
+    white-space: nowrap
+    text-overflow: ellipsis
     cursor: pointer
 
 @mixin title
@@ -17,4 +20,9 @@
     letter-spacing: 0.2px
     color: $color-text
 
+@mixin hover
+    @media (min-width: 992px)
+        &:not([disabled]):hover
+            @content
+    transition: 0.3s
     

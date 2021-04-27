@@ -47,6 +47,8 @@
         background-color: $color-text
         border: none
         color: #FFFFFF
+        +hover
+            background-color: $bc-messeges
     &__button
         &-down
             padding: 19px 18px 13px 18px
@@ -55,4 +57,7 @@
             color: $color-desc
             border-color: $color-desc
             width: fit-content
+            +hover
+                transition: transform 0.1s linear
+                transform: scale(1.1)
     
