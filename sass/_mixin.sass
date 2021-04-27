@@ -19,10 +19,16 @@
     line-height: 48px
     letter-spacing: 0.2px
     color: $color-text
+@mixin text
+    font-size: 18px
+    line-height: 32px
+    color: $color-desc
+    
 
 @mixin hover
     @media (min-width: 992px)
         &:not([disabled]):hover
             @content
     transition: 0.3s
+
     

@@ -2,4 +2,47 @@
     padding: 80px 0 57px 0
     margin-bottom: 100px
     background-color: $bc-secondary
+    &-description
+        display: flex
+        align-items: center
+        justify-content: space-between
+        margin-bottom: 37px
+    &__title
+        +title
+    &__text
+        +text
+    &-wrapper
+        &-card
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 29px;
+            row-gap: 22px;
+    &-card
+        display: flex
+        align-items: flex-start
+        align-items: 
+        padding: 26px 24px 35px 24px
+        max-width: 361px
+        max-height: 165px
+        background: #FFFFFF
+        border: 1px solid #E5EAF4
+        box-sizing: border-box
+        box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.05)
+        border-radius: 16px
+        overflow: auto
+        &__image
+            margin-right: 15px
+        &__title
+            margin: 0
+            +title
+            font-size: 22px
+            line-height: 41px
+            letter-spacing: 0.2px
+        &__text
+            margin: 0
+            +text
+            font-size: 14px;
+            line-height: 20px
+                
+        
     
