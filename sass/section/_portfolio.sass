@@ -1,2 +1,29 @@
 .portfolio
     margin-bottom: 160px
+    &__title
+        +title
+        margin-bottom: 48px
+        &-mini
+            +title-mini
+            margin-bottom: 20px
+    &-slide
+        max-width: 360px
+        &__image
+            max-width: 100%
+        &-description
+            margin-top: -4px
+            padding: 24px
+            background-color: #ffffff
+            border: 1px solid #DDE6F4;
+            border-radius: 0px 0px 8px 8px;
+            overflow: hidden
+            &__title
+                +title
+                font-size: 30px
+                line-height: 40px
+                &-mini
+                    +title-mini
+                    margin-bottom: 16px
+                    color: $color-blue-slide
+                    text-transform: none
+                    letter-spacing: normal

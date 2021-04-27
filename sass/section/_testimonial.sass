@@ -1,2 +1,39 @@
-.testimonial
+.recall
     margin-bottom: 100px
+    &__title
+        +title
+        margin-bottom: 48px
+        &-mini
+            +title-mini
+    &__slide
+        padding: 40px
+        max-width: 555px
+        background: #FFFFFF;
+        border: 1px solid #E5EAF4;
+        box-sizing: border-box;
+        box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.05);
+        border-radius: 8px
+        &-user
+            &-name
+                +title
+                font-size: 24px
+                line-height: 32px
+                letter-spacing: 0.2px
+            &-profession
+                font-size: 16px
+                line-height: 28px
+                color: $color-desc
+        &-description
+            display: flex
+            align-items: center
+            margin-bottom: 30px
+        &-avatar
+            max-width: 56px
+            max-height: 56px
+            margin-right: 20px
+            border-radius: 50%
+            object-fit: cover
+        &-text
+            +text
+            font-size: 14px
+            line-height: 24px
