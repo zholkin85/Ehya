@@ -3,6 +3,11 @@
         width: 93%
     .header
         padding: 17px 0 17px 0
+        &__nav
+            width: 100%
+            top: 55px
+            &-menu
+                padding-right: 15px
     .hero
         margin-top: 99px
         &-background
@@ -47,10 +52,60 @@
             line-height: 26px
             font-size: 13px
             max-width: 100%
+    .social
+        &__title
+            font-size: 28px
+            line-height: 36px
+        &-card
+            &-wrapper
+                column-gap: 20px
+            &-description
+                &__text
+                    font-size: 13px
+                    height: 72px
+                &__link
+                    font-size: 11px
+                    line-height: 20px
+                    &-arrow
+                        vertical-align: text-top
+                
     .footer
+        padding-top: 48px
+        
+        padding-left: 3px
         &-top
             grid-template-columns: 1fr 1fr
+            column-gap: 31px
             &-logo
+                grid-row: 4/4;
+                grid-column: span 2
+                display: flex
+                flex-direction: column
+                align-items: center
+                &__text
+                    text-align: center
+                    font-size: 14px
+                    width: 270px
+                    max-width: 100%
+        &-list
+            &__title
+                font-size: 16px
+                line-height: 22px
+                &--visible
+                        display: block
+                &--hidden
+                        display: none
+            &__text
+                font-size: 14px
+                line-height: 20px
+            &__category
+                &-link
+                    &--visible
+                        display: block
+                    &--hidden
+                        display: none
+        &-bottom
+            display: none
 @media (max-width: 407px)
     .container
         width: 93%

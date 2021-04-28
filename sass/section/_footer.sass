@@ -31,8 +31,16 @@
                         &-img
     &-list
         margin-bottom: 96px
+        &-wrapper
+            
         &__title
             margin-bottom: 31px
+            font-weight: bold
+            font-size: 18px
+            line-height: 25px
+            color: $color-desc
+            &--visible
+                    display: none
         &__category
             list-style: none
             &-item:not(:last-child)
@@ -45,6 +53,8 @@
                 color: #959EAD
                 +hover
                     color: #ffffff
+                &--visible
+                    display: none
     &-bottom
         display: flex
         flex-direction: column
