@@ -7,4 +7,16 @@ $(document).ready(function() {
     $(window).scroll(function() {
         $('.header').toggleClass('scroll', $(this).scrollTop() > 100)
     })
+    $('#buttonDown').on('click', 'a', function(event) {
+        event.preventDefault()
+        var id = $(this).attr('href'),
+            top = $(id).offset().top
+        $('body,html').animate({ scrollTop: top }, 900)
+    })
+    $('#buttonPortfolio').on('click', 'a', function(event) {
+        event.preventDefault()
+        var id = $(this).attr('href'),
+            top = $(id).offset().top
+        $('body,html').animate({ scrollTop: top }, 1500)
+    })
 })
