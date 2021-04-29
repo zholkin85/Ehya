@@ -62,4 +62,15 @@ $(document).ready(function() {
         })
     }
     //=== /modal window ===
+    //=== portfolio-slider ===
+    const swiper = new Swiper('.portfolio-slider', {
+        slidesPerView: 2,
+        spaceBetween: 30,
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.porfolio-button__swiper-button-next',
+            prevEl: '.porfolio-button__swiper-button-prev',
+        },
+    })
 })

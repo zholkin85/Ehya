@@ -1,5 +1,10 @@
 .portfolio
     margin-bottom: 160px
+    &-wrapper
+        display: flex
+        align-items: center
+        justify-content: space-between
+    &-description
     &__title
         +title
         margin-bottom: 48px
@@ -7,12 +12,18 @@
             +title-mini
             margin-bottom: 20px
     &-slide
-        max-width: 360px
+        max-width: 362px
+        border-radius: 8px 8px 0px 0px
         &__image
-            max-width: 100%
+            border: 1px solid #DDE6F4;
+            border-radius: 8px 8px 0px 0px
+            display: block
+            width: auto
+            height: 400px
+            object-fit: cover
         &-description
             margin-top: -4px
-            padding: 24px
+            padding: 21px
             background-color: #ffffff
             border: 1px solid #DDE6F4;
             border-radius: 0px 0px 8px 8px;
@@ -27,3 +38,63 @@
                     color: $color-blue-slide
                     text-transform: none
                     letter-spacing: normal
+    &-button
+        position: relative
+        right: 106px
+        max-width: 100px
+        max-height: 100px
+        &__swiper
+            &-button
+                &-prev::after
+                    display: none
+                &-next::after
+                    display: none
+                &-next,
+                &-prev
+                    width: 40px
+                    height: 40px
+                    background-position: center
+                    background-repeat: no-repeat
+                    background-size: 16px 20px
+                    top: 0
+                    right: 0
+                &-prev
+                    position: absolute
+                    background-image: url(../img/arrow-slider.svg)
+                    left: -95px
+                    transform: rotate(-90deg) rotate(-90deg)
+                &-next
+                    position: absolute
+                    background-image: url(../img/arrow-slider.svg)
+                    transform: rotate(90deg 90deg)
+.swiper
+    
+    &-wrapper
+        max-width: 1139px
+        margin: 0 auto
+    &-slide
+    &-button
+        &-prev::after
+            display: none
+        &-next::after
+            display: none
+        &-prev,
+        &-next
+            width: 40px
+            height: 40px
+            background-position: center
+            background-repeat: no-repeat
+            background-size: 16px 20px
+            top: 0
+            right: 0
+        &-prev
+            position: absolute
+            background-image: url(../img/arrow-slider.svg)
+            left: -95px
+            transform: rotate(-90deg) rotate(-90deg)
+        &-next
+            position: absolute
+            background-image: url(../img/arrow-slider.svg)
+            transform: rotate(90deg 90deg)
+        
+        
