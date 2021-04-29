@@ -397,7 +397,7 @@
                 <!-- /.message__title -->
                 <p class="message__text">Отправьте нам свой бриф и расскажите о своем проекте. Мы готовы помочь всем, что вам нужно</p>
                 <!-- /.message__text -->
-                <button class="message__button">Пообщаемся?</button>
+                <button data-toggle="modal" data-href="#booking-modal" class="message__button">Пообщаемся?</button>
                 <!-- /.message__button -->
             </div>
             <!-- /.message-wrapper -->
@@ -595,13 +595,13 @@
             <a href="#" class="modal__close">
                 <img src="img/close.svg" alt="icon: close">
             </a>
-            <h3 class="modal__title title">Booking</h3>
+            <h3 class="modal__title title">Напишите нам</h3>
             <form action="send.php" method="POST" class="modal__form form">
-                <input type="text" class="input modal__input" placeholder="Your Full Name" name="name">
-                <input type="tel" class="input modal__input phone" placeholder="Phone Number*" name="phone">
+                <input type="text" class="input modal__input" placeholder="Ваше Имя" name="name">
+                <input type="tel" class="input modal__input phone" placeholder="Ваш номер телефона*" name="phone">
                 <input type="email" class="input modal__input" placeholder="Email*" name="email" required>
-                <textarea class="modal__message input" placeholder="Message" name="massage"></textarea>
-                <button class="button modal__button">Send</button>
+                <textarea class="modal__message input" placeholder="Сообщение" name="massage"></textarea>
+                <button class="button modal__button">Отправить</button>
                 <span class="modal__info info">* Required Fields</span>
             </form>
         </div>
