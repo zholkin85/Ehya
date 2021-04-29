@@ -1,0 +1,59 @@
+.modal
+    &__overlay
+        position: fixed
+        left: 0
+        top: 0
+        right: 0
+        bottom: 0
+        background-color: rgba(0, 143, 223, 0.39)
+        z-index: 100
+        visibility: hidden
+        opacity: 0
+        transition: opacity 0.2s
+        &--visible
+            visibility: visible
+            opacity: 1
+    &__dialog
+        position: fixed
+        top: 45%
+        left: 50%
+        max-width: 480px
+        padding: 34px 95px 34px 83px
+        background-color: $bc-messeges
+        transform: translate(-50%, -50%)
+        color: $color-text
+        border-radius: 8px
+        z-index: 101
+        visibility: hidden
+        opacity: 0
+        transition: opacity 0.2s
+        overflow-y: auto
+        max-height: 95%
+        &--visible
+            visibility: visible
+            opacity: 1
+    &__close
+        position: absolute
+        right: 24px
+        top: 19px
+        text-decoration: none
+        cursor: pointer
+    &__input
+        width: 100%
+        margin-top: 15px
+        
+    &__message
+        +form
+        min-height: 123px
+        width: 100%
+        margin-top: 15px
+        margin-bottom: -8px
+        
+    &__button
+        +button
+        max-width: 165px
+        padding: 16px 64px
+        margin-top: 19px
+    &__title
+        text-align: center
+        margin: 0
