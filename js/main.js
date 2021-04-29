@@ -64,13 +64,27 @@ $(document).ready(function() {
     //=== /modal window ===
     //=== portfolio-slider ===
     const swiper = new Swiper('.portfolio-slider', {
+            slidesPerView: 2,
+            spaceBetween: 30,
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.porfolio-button__swiper-button-next',
+                prevEl: '.porfolio-button__swiper-button-prev',
+            },
+        })
+        //=== /portfolio-slider
+
+    //=== recall-slider
+    const recallSlider = new Swiper('.recall-slider', {
         slidesPerView: 2,
+        loop: false,
         spaceBetween: 30,
 
         // Navigation arrows
         navigation: {
-            nextEl: '.porfolio-button__swiper-button-next',
-            prevEl: '.porfolio-button__swiper-button-prev',
+            nextEl: '.recall-slider__swiper-button-next',
+            prevEl: '.recall-slider__swiper-button-prev',
         },
     })
 })
