@@ -66,6 +66,19 @@ $(document).ready(function() {
     const swiper = new Swiper('.portfolio-slider', {
             slidesPerView: 2,
             spaceBetween: 30,
+            loop: false,
+            breakpoints: {
+                992: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
+                1200: {
+                    slidesPerView: 2,
+                },
+                1440: {
+                    slidesPerView: 3,
+                },
+            },
 
             // Navigation arrows
             navigation: {
@@ -78,14 +91,11 @@ $(document).ready(function() {
     //=== recall-slider
     const recallSlider = new Swiper('.recall-slider', {
         slidesPerView: 1,
-        spaceBetween: 20,
-        slidesPerGroup: 1,
-        loop: false,
+        spaceBetween: 30,
         breakpoints: {
             992: {
                 slidesPerView: 2,
                 spaceBetween: 30,
-                centeredSlides: false,
             },
             1200: {
                 slidesPerView: 2,
@@ -98,4 +108,66 @@ $(document).ready(function() {
             prevEl: '.recall__slide-button-prev',
         },
     })
+
+    // Обработка формы
+    $('.form').each(function() {
+        $(this).validate({
+            errorClass: 'invalid',
+            rules: {
+                name: {
+                    required: true,
+                    minlength: '2',
+                },
+                nameFoot: {
+                    required: true,
+                    minlength: '2',
+                },
+                phone: {
+                    required: true,
+                    phone: true,
+                },
+                email: {
+                    required: true,
+                    email: true,
+                    minlength: '2',
+                },
+            },
+            messages: {
+                name: {
+                    required: 'Укажите ваше имя',
+                    minlength: 'Имя должно состоять минимум из двух букв.',
+                },
+                nameFoot: {
+                    required: 'Please specify your name',
+                    minlength: 'The name must be at least two letters',
+                },
+                email: {
+                    required: 'We need your email address to contact you',
+                    email: 'Your email address must be in the format of name@domain.com',
+                },
+                phone: {
+                    required: 'Phone is required',
+                },
+                emailSub: {
+                    required: 'We need your email address to contact you',
+                    email: 'Your email address must be in the format of name@domain.com',
+                },
+            },
+        })
+        $.validator.addMethod(
+            'phone',
+            function(phone_number, element) {
+                var ruPhone_number = phone_number.replace(/\(|\)|\s+|-/g, '')
+                return this.optional(element) || (ruPhone_number.length > 9 && /^((\+7|7|8)+([0-9]){10})$/.test(ruPhone_number))
+            },
+            'Please specify a valid mobile number',
+        )
+    })
+
+    //маска номера телефона
+    $('.phone').each(function() {
+        $(this).mask('+7 (999) 999-99-99', { placeholder: '+7 (999) 999-99-99' })
+    })
+
+    // Отправка данных на сервер
 })
