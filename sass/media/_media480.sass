@@ -10,6 +10,7 @@
                 padding-right: 15px
     .hero
         margin-top: 99px
+        margin-bottom: 18px
         &-background
             background-image: url(../img/hero/heromini.png)
             top: 310px
@@ -32,42 +33,184 @@
             line-height: 28px
             text-align: center
         &__button
-            padding: 13px 37px
-            font-size: 16px
-            line-height: 20px
+            padding: 12px 37px
+            &-link
+                font-size: 16px
+                line-height: 20px
             &-down
                 padding: 15px 15px 10px 16px
                 grid-row: 3
                 margin-left: -5px
                 margin-top: 77px
     .partner
+        margin-bottom: 19px
+        &__title
+            &-mini
+                margin: 8px 0 27px 32px
+                line-height: 14px
         &-description
             margin-bottom: 16px
         &__title
-            font-size: 27px
-            line-height: 33px
-            max-width: 78%
+            font-size: 28px
+            line-height: 29px
+            max-width: 100%
+            margin-bottom: 15px
         &__text
             font-size: 17px
-            line-height: 26px
+            line-height: 24px
             font-size: 13px
             max-width: 100%
+            margin-bottom: 10px
+        &-logo
+            column-gap: 31px
+            max-width: 82%
+    .working
+        margin-bottom: 41px
+        &-description
+            margin-bottom: 6px
+        &__title
+            margin-bottom: 17px
+            font-size: 28px
+            line-height: 36px
+        &__text
+            max-width: 85%
+            font-size: 16px
+            line-height: 28px
+        &-wrapper
+            &-card
+                grid-row-gap: 4px
+        &-card
+            &-design
+                padding: 15px 20px 20px 17px
+                grid-row: 5
+            &-study
+                padding: 12px 20px 20px 24px
+                height: 200px
+            height: 200px
+            flex-direction: column
+            padding: 15px 20px 20px 24px
+            &__image
+                margin-bottom: 16px
+            &__title
+                font-size: 21px
+                line-height: 24px
+                margin-bottom: 6px
+    
+    .portfolio
+        &-mobile
+            margin-bottom: 34px
+            &-slider
+                grid-template-columns: 1fr 
+                justify-items: center
+        &-description
+            text-align: center
+            &__title
+                &-mini
+                    margin-left: 12px
+        &-slide
+            height: 404px
+            width: 282px
+            &__image
+                height: 300px
+            &-description
+                text-align: center
+                padding: 34px 0px
+                height: 109px
+                &__title
+                    &-mini
+                        margin-bottom: 9px
+                        margin-top: -8px
+    .title
+        &-mini
+            &-hidden
+                display: none
+    .recall
+        margin-bottom: 141px
+        &__title
+            margin-bottom: 66px
+            text-align: center
+            font-size: 28px
+            line-height: 36px
+            &-mini
+                text-align: center
+        &__slide
+            padding: 11px
+            padding-left: 8px
+            padding-top: 25px
+            max-height: 360px
+            height: auto
+            &-description
+                flex-direction: column
+                margin-bottom: 6px
+            &-avatar
+                margin-right: 0
+                margin-bottom: 15px
+            &-user
+                &-name
+                    margin-bottom: 8px;
+                    padding-left: 32px
+                    font-size: 20px
+                    line-height: 24px
+                &-profession
+                    padding-right: 5px
+                    font-size: 11px
+                    line-height: 27px
+            &-text
+                font-size: 14px
+                line-height: 22px
+                text-align: center
+            &-button
+                &-prev,
+                &-next
+                    top: 108%
+                &-prev
+                    left: 20%
+                &-next
+                    right: 40%
+    .swiper
+        &-wrapper
+            height: 360px
     .social
+        margin-bottom: 54px
         &__title
             font-size: 28px
             line-height: 36px
+            margin-bottom: 35px
         &-card
             &-wrapper
                 column-gap: 20px
+                grid-row-gap: 32px
+            &__logo
+                width: 48px
+                height: 48px
+                margin-bottom: 14px
             &-description
+                &__title
+                    margin-bottom: 7px
                 &__text
+                    margin-bottom: 15px
                     font-size: 13px
                     height: 72px
+                    line-height: 20px
                 &__link
                     font-size: 11px
                     line-height: 20px
                     &-arrow
                         vertical-align: text-top
+    .message
+        padding: 64px 0 64px 0
+        &__title
+            margin-bottom: 33px
+            font-size: 28px
+            line-height: 30px
+        &__text
+            margin-bottom: 11px
+            font-size: 16px
+            line-height: 27px
+            text-align: center
+        &__button
+            padding: 13px 26px
+
                 
     .footer
         padding-top: 48px
@@ -75,20 +218,30 @@
         padding-left: 3px
         &-top
             grid-template-columns: 1fr 1fr
-            column-gap: 31px
+            column-gap: 13px
             &-logo
                 grid-row: 4/4;
                 grid-column: span 2
                 display: flex
                 flex-direction: column
                 align-items: center
+                &__social
+                    &-item:not(:last-child)
+                        margin-right: 24px
+                &__image
+                    max-width: 75px
+                    margin-bottom: 19px
                 &__text
+                    padding-right: 8px
+                    margin-bottom: 22px
                     text-align: center
                     font-size: 14px
                     width: 270px
                     max-width: 100%
         &-list
+            margin-bottom: 43px
             &__title
+                margin-bottom: 19px
                 font-size: 16px
                 line-height: 22px
                 &--visible
@@ -99,7 +252,11 @@
                 font-size: 14px
                 line-height: 20px
             &__category
+                &-item:not(:last-child) 
+                        margin-bottom: 15px
                 &-link
+                    font-size: 14px
+                    line-height: 20px
                     &--visible
                         display: block
                     &--hidden

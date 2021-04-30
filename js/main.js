@@ -77,9 +77,20 @@ $(document).ready(function() {
 
     //=== recall-slider
     const recallSlider = new Swiper('.recall-slider', {
-        slidesPerView: 2,
+        slidesPerView: 1,
+        spaceBetween: 20,
+        slidesPerGroup: 1,
         loop: false,
-        spaceBetween: 30,
+        breakpoints: {
+            992: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+                centeredSlides: false,
+            },
+            1200: {
+                slidesPerView: 2,
+            },
+        },
 
         // Navigation arrows
         navigation: {
