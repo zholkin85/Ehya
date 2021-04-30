@@ -76,7 +76,7 @@ $(document).ready(function() {
                     slidesPerView: 2,
                 },
                 1440: {
-                    slidesPerView: 3,
+                    slidesPerView: 4,
                 },
             },
 
