@@ -185,8 +185,8 @@
     pointer-events: none
 }
 
-.recall-slider__swiper-button-prev.swiper-button-disabled,
-.recall-slider__swiper-button-next.swiper-button-disabled {
+.recall__slide-button-prev.swiper-button-disabled,
+.recall__slide-button-next.swiper-button-disabled {
     opacity: 0;
     cursor: auto;
     pointer-events: none

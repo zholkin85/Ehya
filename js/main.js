@@ -69,8 +69,8 @@ $(document).ready(function() {
 
             // Navigation arrows
             navigation: {
-                nextEl: '.porfolio-button__swiper-button-next',
-                prevEl: '.porfolio-button__swiper-button-prev',
+                nextEl: '.button-slide-next',
+                prevEl: '.button-slide-prev',
             },
         })
         //=== /portfolio-slider
@@ -83,8 +83,8 @@ $(document).ready(function() {
 
         // Navigation arrows
         navigation: {
-            nextEl: '.recall-slider__swiper-button-next',
-            prevEl: '.recall-slider__swiper-button-prev',
+            nextEl: '.recall__slide-button-next',
+            prevEl: '.recall__slide-button-prev',
         },
     })
 })
