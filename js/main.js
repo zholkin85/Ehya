@@ -67,6 +67,8 @@ $(document).ready(function() {
             slidesPerView: 2,
             spaceBetween: 30,
             loop: false,
+            autoResize: false,
+            resizeReInit: true,
             breakpoints: {
                 992: {
                     slidesPerView: 3,
@@ -92,6 +94,8 @@ $(document).ready(function() {
     const recallSlider = new Swiper('.recall-slider', {
         slidesPerView: 1,
         spaceBetween: 30,
+        autoResize: false,
+        resizeReInit: true,
         breakpoints: {
             992: {
                 slidesPerView: 2,
