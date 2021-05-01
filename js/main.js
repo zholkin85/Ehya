@@ -64,31 +64,32 @@ $(document).ready(function() {
     //=== /modal window ===
     //=== portfolio-slider ===
     const swiper = new Swiper('.portfolio-slider', {
-            slidesPerView: 2,
-            spaceBetween: 30,
-            loop: false,
-            autoResize: false,
-            resizeReInit: true,
-            breakpoints: {
-                992: {
-                    slidesPerView: 3,
-                    spaceBetween: 30,
-                },
-                1200: {
-                    slidesPerView: 2,
-                },
-                1440: {
-                    slidesPerView: 4,
-                },
+        slidesPerView: 2,
+        spaceBetween: 30,
+        loop: false,
+        autoResize: false,
+        resizeReInit: true,
+        breakpoints: {
+            992: {
+                slidesPerView: 3,
+                spaceBetween: 30,
             },
+            1200: {
+                slidesPerView: 2,
+            },
+            1440: {
+                slidesPerView: 4,
+            },
+        },
 
-            // Navigation arrows
-            navigation: {
-                nextEl: '.button-slide-next',
-                prevEl: '.button-slide-prev',
-            },
-        })
-        //=== /portfolio-slider
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    })
+
+    //=== /portfolio-slider
 
     //=== recall-slider
     const recallSlider = new Swiper('.recall-slider', {
@@ -146,11 +147,11 @@ $(document).ready(function() {
                     minlength: 'The name must be at least two letters',
                 },
                 email: {
-                    required: 'We need your email address to contact you',
-                    email: 'Your email address must be in the format of name@domain.com',
+                    required: 'Нам нужен ваш адрес электронной почты, чтобы с вами связаться',
+                    email: 'Ваш адрес электронной почты должен быть в формате name@domain.com',
                 },
                 phone: {
-                    required: 'Phone is required',
+                    required: 'Телефон обязателен',
                 },
                 emailSub: {
                     required: 'We need your email address to contact you',
@@ -164,7 +165,7 @@ $(document).ready(function() {
                 var ruPhone_number = phone_number.replace(/\(|\)|\s+|-/g, '')
                 return this.optional(element) || (ruPhone_number.length > 9 && /^((\+7|7|8)+([0-9]){10})$/.test(ruPhone_number))
             },
-            'Please specify a valid mobile number',
+            'Укажите действующий номер мобильного телефона',
         )
     })
     AOS.init()

@@ -18,6 +18,8 @@
         &-wrapper
             &-inner
                 grid-template-rows: 3fr 4fr min-content
+                &-thank
+                    grid-template-rows: 1fr
         &-description
             max-width: 100%
         &__title
@@ -270,8 +272,17 @@
         &__dialog
             top: 50%
             left: 50%
-            width: 100%
+            width: 90%
             max-width: 100%
+        &__title
+            font-size: 30px
+        &__message
+            margin-bottom: 10px
+        &__button
+            margin-top: 8px
+            &-wrapper
+                display: flex
+                flex-direction: column-reverse
             
 @media (max-width: 407px)
     .container

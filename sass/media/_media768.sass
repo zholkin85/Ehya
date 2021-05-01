@@ -63,6 +63,8 @@
                 grid-template-rows: 4fr 6fr 1fr;
                 align-items: center;
                 justify-items: center;
+                &-thank
+                    grid-template-rows: 1fr
         &-description
             max-width: 92%
             align-items: center
@@ -95,8 +97,11 @@
                 &-airbnb
                     display: none
     .working
+        &-description
+            flex-direction: column
         &__text
-            max-width: 42%
+            max-width: 100%
+            text-align: center
         &-card
             padding: 20px 20px 30px 20px
     .portfolio
