@@ -1,9 +1,9 @@
 .portfolio
     margin-bottom: 165px
-    &-wrapper
-        display: flex
-        align-items: center
-        justify-content: space-between
+    &-slider
+        &__top
+            max-width: 1140px
+            margin: 0 auto
     &-description
         margin-bottom: 7px
     &__title
@@ -40,8 +40,9 @@
                     text-transform: none
                     letter-spacing: normal
     &-button
-        position: relative
-        right: 106px
+        position: absolute
+        right: 23%
+        top: 10%
         max-width: 100px
         max-height: 100px
         &__swiper
