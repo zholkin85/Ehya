@@ -8,364 +8,260 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" href="css/normalize.min.css">
 </head>
 
 <body>
-    <header class="header header--fixed">
-        <div class="container">
-            <div class="header-wrapper">
-                <div class="header__logo">
-                    <a href="#" class="header__logo-link">
-                        <img src="img/Logo.png" alt="Image: Logo" class="header__logo-image">
-                    </a>
-                </div>
-                <!-- /.header__logo -->
-                <nav class="header__nav">
-                    <ul class="menu header__nav-menu">
-                        <li class="header__nav-item">
-                            <a href="#" class="header__nav-link">Домой</a>
-                        </li>
-                        <!-- /.header__nav-item -->
-                        <li class="header__nav-item">
-                            <a href="#" class="header__nav-link">Лэндинги</a>
-                            <img class="header__nav-link-angle" src="img/svg/angle-down.svg" alt="angle-down">
-                            <ul>
-                                <li>
-                                    <a href="#">Shortlist</a>
-                                </li>
-                                <li>
-                                    <a href="#">Longread</a>
-                                </li>
-                                <li>
-                                    <a href="#">Мультилэндинг</a>
-                                </li>
-                                <li>
-                                    <a href="#">Квиз</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <!-- /.header__nav-item -->
-                        <li class="header__nav-item">
-                            <a href="#" class="header__nav-link">Страницы</a>
-                            <img class="header__nav-link-angle" src="img/svg/angle-down.svg" alt="angle-down">
-                            <ul>
-                                <li>
-                                    <a href="#">Парнёры</a>
-                                </li>
-                                <li>
-                                    <a href="#">Услуги</a>
-                                </li>
-                                <li>
-                                    <a href="#">Портфолио</a>
-                                </li>
-                                <li>
-                                    <a href="#">Отзывы</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <!-- /.header__nav-item -->
-                        <li class="header__nav-item">
-                            <a href="#" class="header__nav-link">Помощь</a>
-                        </li>
-                        <!-- /.header__nav-item -->
-                        <li class="header__nav-item">
-                            <button data-toggle="modal" data-href="#booking-modal" class="header__button header__button--visible button">Получить</button>
-                            <!-- /.header__button button -->
-                        </li>
-                        <!-- /.header__nav-item -->
-                    </ul>
-                    <!-- /.header__nav-menu -->
-                    <button data-toggle="modal" data-href="#booking-modal" class="header__button header__button--hidden button">Получить</button>
-                    <!-- /.header__button button -->
-                </nav>
-                <!-- /.header__nav -->
-                <div class="menu-burger">
-                    <a href="#" class="menu-burger-btn">
-                        <span></span>
-                    </a>
+    <div class="pages">
+        <header class="header header--fixed">
+            <div class="container">
+                <div class="header-wrapper">
+                    <div class="header__logo">
+                        <a href="#" class="header__logo-link">
+                            <img src="img/Logo.png" alt="Image: Logo" class="header__logo-image">
+                        </a>
+                    </div>
+                    <!-- /.header__logo -->
+                    <nav class="header__nav">
+                        <ul class="menu header__nav-menu">
+                            <li class="header__nav-item">
+                                <a href="#" class="header__nav-link">Домой</a>
+                            </li>
+                            <!-- /.header__nav-item -->
+                            <li class="header__nav-item">
+                                <a href="#" class="header__nav-link">Лэндинги</a>
+                                <img class="header__nav-link-angle" src="img/svg/angle-down.svg" alt="angle-down">
+                                <ul>
+                                    <li>
+                                        <a href="#">Shortlist</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Longread</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Мультилэндинг</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Квиз</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- /.header__nav-item -->
+                            <li class="header__nav-item">
+                                <a href="#" class="header__nav-link">Страницы</a>
+                                <img class="header__nav-link-angle" src="img/svg/angle-down.svg" alt="angle-down">
+                                <ul>
+                                    <li>
+                                        <a href="#">Парнёры</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Услуги</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Портфолио</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Отзывы</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- /.header__nav-item -->
+                            <li class="header__nav-item">
+                                <a href="#" class="header__nav-link">Помощь</a>
+                            </li>
+                            <!-- /.header__nav-item -->
+                            <li class="header__nav-item">
+                                <button data-toggle="modal" data-href="#booking-modal" class="header__button header__button--visible button">Получить</button>
+                                <!-- /.header__button button -->
+                            </li>
+                            <!-- /.header__nav-item -->
+                        </ul>
+                        <!-- /.header__nav-menu -->
+                        <button data-toggle="modal" data-href="#booking-modal" class="header__button header__button--hidden button">Получить</button>
+                        <!-- /.header__button button -->
+                    </nav>
+                    <!-- /.header__nav -->
+                    <div class="menu-burger">
+                        <a href="#" class="menu-burger-btn">
+                            <span></span>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <!-- /.header-wrapper -->
-        <!-- /.container -->
-    </header>
-    <!-- /.header -->
-    <section class="hero">
-        <div class="hero-background">
-        </div>
-        <div class="hero-wrapper-outer">
-            <div class="container">
-                <div class="hero-wrapper-inner">
-                    <div class="hero-description">
-                        <h1 class="hero__title">Номер #1, <span class="hero__title-mini">Южная&nbsp;Азия</span>&emsp; Агенство цифровых продуктов
-                        </h1>
-                        <p class="hero__text">Мы даем результаты, помогающие Вам добиться экономии средств и времени без риска или накладных расходов на управление</p>
-                        <div id="buttonPortfolio" class="button hero__button">
-                            <a class="hero__button-link" href="#portfolio">Наше портфолио</a>
+            <!-- /.header-wrapper -->
+            <!-- /.container -->
+        </header>
+        <!-- /.header -->
+        <section class="hero">
+            <div class="hero-background">
+            </div>
+            <div class="hero-wrapper-outer">
+                <div class="container">
+                    <div class="hero-wrapper-inner">
+                        <div class="hero-description">
+                            <h1 class="hero__title">Номер #1, <span class="hero__title-mini">Южная&nbsp;Азия</span>&emsp; Агенство цифровых продуктов
+                            </h1>
+                            <p class="hero__text">Мы даем результаты, помогающие Вам добиться экономии средств и времени без риска или накладных расходов на управление</p>
+                            <div id="buttonPortfolio" class="button hero__button">
+                                <a class="hero__button-link" href="#portfolio">Наше портфолио</a>
+                            </div>
                         </div>
+                        <!-- /.hero-description -->
+
+
+                        <div id="buttonDown" class="button hero__button-down">
+                            <a href="#partner" class="hero__button-link"><img src="img/svg/arrow-down.svg" alt="Button: arrow-down" class="hero__button-image"></a>
+                        </div>
+
                     </div>
-                    <!-- /.hero-description -->
-
-
-                    <div id="buttonDown" class="button hero__button-down">
-                        <a href="#partner" class="hero__button-link"><img src="img/svg/arrow-down.svg" alt="Button: arrow-down" class="hero__button-image"></a>
-                    </div>
-
+                    <!-- /.hero-wrapper -->
                 </div>
-                <!-- /.hero-wrapper -->
+                <!-- /.container -->
+            </div>
+        </section>
+        <!-- /.hero -->
+        <section id="partner" class="partner">
+            <div class="container">
+                <div class="partner-wrapper">
+                    <h4 class="partner__title-mini">Наши партнеры</h4>
+                    <!-- /.partner__title-mini -->
+                    <div class="partner-description">
+                        <h2 class="partner__title">Мы работали с ними, Мы&nbsp;доверяем&nbsp;друг другу</h2>
+                        <!-- /.partner__title title -->
+                        <p class="partner__text">Наша команда предоставляет творческое образование высокого уровня для глобальной аудитории студентов, преподавателей и предпринимателей со всего мира</p>
+                        <!-- /.partner__text -->
+                    </div>
+                    <!-- /.partner-description -->
+                    <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" class="partner-logo">
+                        <a href="#" class="partner-logo__link"><img src="img/svg/slack.svg" alt="Logo: slack" class="partner-logo__img"></a>
+                        <a href="#" class="partner-logo__link"><img src="img/svg/netflix.svg" alt="Logo: netflix" class="partner-logo__img"></a>
+                        <a href="#" class="partner-logo__link"><img src="img/svg/fitbit.svg" alt="Logo: fitbit" class="partner-logo__img"></a>
+                        <a href="#" class="partner-logo__link"><img src="img/svg/google.svg" alt="Logo: google" class="partner-logo__img"></a>
+                        <a href="#" class="partner-logo__link partner-logo__link-airbnb"><img src="img/svg/airbnb.svg" alt="Logo: airbnb" class="partner-logo__img"></a>
+                    </div>
+                </div>
+                <!-- /.partner-wrapper -->
             </div>
             <!-- /.container -->
-        </div>
-    </section>
-    <!-- /.hero -->
-    <section id="partner" class="partner">
-        <div class="container">
-            <div class="partner-wrapper">
-                <h4 class="partner__title-mini">Наши партнеры</h4>
-                <!-- /.partner__title-mini -->
-                <div class="partner-description">
-                    <h2 class="partner__title">Мы работали с ними, Мы&nbsp;доверяем&nbsp;друг другу</h2>
-                    <!-- /.partner__title title -->
-                    <p class="partner__text">Наша команда предоставляет творческое образование высокого уровня для глобальной аудитории студентов, преподавателей и предпринимателей со всего мира</p>
-                    <!-- /.partner__text -->
+        </section>
+        <!-- /.partner -->
+        <section class="working">
+            <div class="container">
+                <div class="working-wrapper">
+                    <div class="working-description">
+                        <h2 class="working__title">Что мы делаем</h2>
+                        <!-- /.working__title -->
+                        <p class="working__text">Мы работаем вместе с нашим клиентом, чтобы создать эффективный продукт.
+                        </p>
+                        <!-- /.working__text -->
+                    </div>
+                    <!-- /.working-description -->
+                    <div class="working-wrapper-card">
+                        <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="working-card">
+                            <img src="img/working/branding.svg" alt="logo: branding" class="working-card__image">
+                            <div class="working-card-description">
+                                <div class="working-card__title">Брендинг</div>
+                                <!-- /.working-card__title -->
+                                <p class="working-card__text">Создаем логотип и концепцию под нужды вашего бренда.
+                                </p>
+                                <!-- /.working-card__text -->
+                            </div>
+                            <!-- /.working-card-description -->
+                        </div>
+                        <!-- /.working-card -->
+                        <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="working-card">
+                            <img src="img/working/development.svg" alt="logo: development" class="working-card__image">
+                            <div class="working-card-description">
+                                <div class="working-card__title">Разработка</div>
+                                <!-- /.working-card__title -->
+                                <p class="working-card__text">Мы разрабатываем ваши приложения, веб-сайт и панель управления для вас.
+                                </p>
+                                <!-- /.working-card__text -->
+                            </div>
+                            <!-- /.working-card-description -->
+                        </div>
+                        <!-- /.working-card -->
+                        <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="working-card working-card-design">
+                            <img src="img/working/design.svg" alt="logo: design" class="working-card__image">
+                            <div class="working-card-description">
+                                <div class="working-card__title">UI/UX Дизайн</div>
+                                <!-- /.working-card__title -->
+                                <p class="working-card__text">Создание цифрового продукта с красивым и интуитивно понятным&nbsp; дизайном.
+                                </p>
+                                <!-- /.working-card__text -->
+                            </div>
+                            <!-- /.working-card-description -->
+                        </div>
+                        <!-- /.working-card -->
+                        <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="working-card">
+                            <img src="img/working/microstock.svg" alt="logo: microstock" class="working-card__image">
+                            <div class="working-card-description">
+                                <div class="working-card__title">Microstock</div>
+                                <!-- /.working-card__title -->
+                                <p class="working-card__text">Мы производим миллион активов для нужд вашего бизнеса.
+                                </p>
+                                <!-- /.working-card__text -->
+                            </div>
+                            <!-- /.working-card-description -->
+                        </div>
+                        <!-- /.working-card -->
+                        <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="working-card">
+                            <img src="img/working/social.svg" alt="logo: social" class="working-card__image">
+                            <div class="working-card-description">
+                                <div class="working-card__title">Соцсети</div>
+                                <!-- /.working-card__title -->
+                                <p class="working-card__text">Планирование и поддержка социальных сетей для широкой аудитории.
+                                </p>
+                                <!-- /.working-card__text -->
+                            </div>
+                            <!-- /.working-card-description -->
+                        </div>
+                        <!-- /.working-card -->
+                        <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="working-card working-card-study">
+                            <img src="img/working/study.svg" alt="logo: study" class="working-card__image">
+                            <div class="working-card-description">
+                                <div class="working-card__title">Исследование</div>
+                                <!-- /.working-card__title -->
+                                <p class="working-card__text">Помощь исследовательскому стартапу или бренду в удовлетворении потребностей бизнеса.</p>
+                                <!-- /.working-card__text -->
+                            </div>
+                            <!-- /.working-card-description -->
+
+                        </div>
+                        <!-- /.working-card -->
+                    </div>
+                    <!-- /.working-wrapper-card -->
                 </div>
-                <!-- /.partner-description -->
-                <div class="partner-logo">
-                    <a href="#" class="partner-logo__link"><img src="img/svg/slack.svg" alt="Logo: slack" class="partner-logo__img"></a>
-                    <a href="#" class="partner-logo__link"><img src="img/svg/netflix.svg" alt="Logo: netflix" class="partner-logo__img"></a>
-                    <a href="#" class="partner-logo__link"><img src="img/svg/fitbit.svg" alt="Logo: fitbit" class="partner-logo__img"></a>
-                    <a href="#" class="partner-logo__link"><img src="img/svg/google.svg" alt="Logo: google" class="partner-logo__img"></a>
-                    <a href="#" class="partner-logo__link partner-logo__link-airbnb"><img src="img/svg/airbnb.svg" alt="Logo: airbnb" class="partner-logo__img"></a>
-                </div>
+                <!-- /.working-wrapper -->
             </div>
-            <!-- /.partner-wrapper -->
-        </div>
-        <!-- /.container -->
-    </section>
-    <!-- /.partner -->
-    <section class="working">
-        <div class="container">
-            <div class="working-wrapper">
-                <div class="working-description">
-                    <h2 class="working__title">Что мы делаем</h2>
-                    <!-- /.working__title -->
-                    <p class="working__text">Мы работаем вместе с нашим клиентом, чтобы создать эффективный продукт.</p>
-                    <!-- /.working__text -->
-                </div>
-                <!-- /.working-description -->
-                <div class="working-wrapper-card">
-                    <div class="working-card">
-                        <img src="img/working/branding.svg" alt="logo: branding" class="working-card__image">
-                        <div class="working-card-description">
-                            <div class="working-card__title">Брендинг</div>
-                            <!-- /.working-card__title -->
-                            <p class="working-card__text">Создаем логотип и концепцию под нужды вашего бренда.
-                            </p>
-                            <!-- /.working-card__text -->
-                        </div>
-                        <!-- /.working-card-description -->
+            <!-- /.container -->
+        </section>
+        <!-- /.working -->
+        <section id="portfolio" class="portfolio">
+            <div class="container">
+                <div class="portfolio-wrapper">
+                    <div class="portfolio-description">
+                        <h4 class="portfolio__title-mini">портфолио</h4>
+                        <!-- /.portfolio__title-mini -->
+                        <h2 class="portfolio__title">Наши проекты</h2>
+                        <!-- /.portfolio__title -->
                     </div>
-                    <!-- /.working-card -->
-                    <div class="working-card">
-                        <img src="img/working/development.svg" alt="logo: development" class="working-card__image">
-                        <div class="working-card-description">
-                            <div class="working-card__title">Разработка</div>
-                            <!-- /.working-card__title -->
-                            <p class="working-card__text">Мы разрабатываем ваши приложения, веб-сайт и панель управления для вас.
-                            </p>
-                            <!-- /.working-card__text -->
-                        </div>
-                        <!-- /.working-card-description -->
+                    <!-- /.portfolio-description -->
+                    <div class="portfolio-button">
+                        <div class="button-slide-next swiper-button-next"></div>
+                        <div class="button-slide-prev swiper-button-prev"></div>
                     </div>
-                    <!-- /.working-card -->
-                    <div class="working-card working-card-design">
-                        <img src="img/working/design.svg" alt="logo: design" class="working-card__image">
-                        <div class="working-card-description">
-                            <div class="working-card__title">UI/UX Дизайн</div>
-                            <!-- /.working-card__title -->
-                            <p class="working-card__text">Создание цифрового продукта с красивым и интуитивно понятным&nbsp; дизайном.
-                            </p>
-                            <!-- /.working-card__text -->
-                        </div>
-                        <!-- /.working-card-description -->
-                    </div>
-                    <!-- /.working-card -->
-                    <div class="working-card">
-                        <img src="img/working/microstock.svg" alt="logo: microstock" class="working-card__image">
-                        <div class="working-card-description">
-                            <div class="working-card__title">Microstock</div>
-                            <!-- /.working-card__title -->
-                            <p class="working-card__text">Мы производим миллион активов для нужд вашего бизнеса.
-                            </p>
-                            <!-- /.working-card__text -->
-                        </div>
-                        <!-- /.working-card-description -->
-                    </div>
-                    <!-- /.working-card -->
-                    <div class="working-card">
-                        <img src="img/working/social.svg" alt="logo: social" class="working-card__image">
-                        <div class="working-card-description">
-                            <div class="working-card__title">Соцсети</div>
-                            <!-- /.working-card__title -->
-                            <p class="working-card__text">Планирование и поддержка социальных сетей для широкой аудитории.
-                            </p>
-                            <!-- /.working-card__text -->
-                        </div>
-                        <!-- /.working-card-description -->
-                    </div>
-                    <!-- /.working-card -->
-                    <div class="working-card working-card-study">
-                        <img src="img/working/study.svg" alt="logo: study" class="working-card__image">
-                        <div class="working-card-description">
-                            <div class="working-card__title">Исследование</div>
-                            <!-- /.working-card__title -->
-                            <p class="working-card__text">Помощь исследовательскому стартапу или бренду в удовлетворении потребностей бизнеса.</p>
-                            <!-- /.working-card__text -->
-                        </div>
-                        <!-- /.working-card-description -->
 
-                    </div>
-                    <!-- /.working-card -->
+
                 </div>
-                <!-- /.working-wrapper-card -->
+                <!-- /.portfolio-wrapper -->
             </div>
-            <!-- /.working-wrapper -->
-        </div>
-        <!-- /.container -->
-    </section>
-    <!-- /.working -->
-    <section id="portfolio" class="portfolio">
-        <div class="container">
-            <div class="portfolio-wrapper">
-                <div class="portfolio-description">
-                    <h4 class="portfolio__title-mini">портфолио</h4>
-                    <!-- /.portfolio__title-mini -->
-                    <h2 class="portfolio__title">Наши проекты</h2>
-                    <!-- /.portfolio__title -->
-                </div>
-                <!-- /.portfolio-description -->
-                <div class="portfolio-button">
-                    <div class="button-slide-next swiper-button-next"></div>
-                    <div class="button-slide-prev swiper-button-prev"></div>
-                </div>
-
-
-            </div>
-            <!-- /.portfolio-wrapper -->
-        </div>
-        <!-- /.container -->
-        <div class="portfolio-slider swiper-container">
-            <div class="swiper-wrapper">
-                <div class="portfolio-slide swiper-slide">
-                    <img src="img/portfolio/landing.png" alt="Image: Landingpage" class="portfolio-slide__image">
-                    <div class="portfolio-slide-description">
-                        <div class="h5 portfolio-slide-description__title-mini">Вебсайт, Лендинг</div>
-                        <!-- /.h5 portfolio-slide__title-mini -->
-                        <h2 class="portfolio-slide-description__title">Проект Вебсайта</h2>
-                        <!-- /.portfolio-slide__title -->
-                    </div>
-                    <!-- /.portfolio-slide-description -->
-                </div>
-                <!-- /.portfolio-slide -->
-                <div class="portfolio-slide swiper-slide">
-                    <img src="img/portfolio/design.png" alt="Image: design" class="portfolio-slide__image">
-                    <div class="portfolio-slide-description">
-                        <div class="h5 portfolio-slide-description__title-mini">Паенль навигации, UI/UX Дизайн</div>
-                        <!-- /.h5 portfolio-slide__title-mini -->
-                        <h2 class="portfolio-slide-description__title">Проект Дизайна</h2>
-                        <!-- /.portfolio-slide__title -->
-                    </div>
-                    <!-- /.portfolio-slide-description -->
-                </div>
-                <!-- /.portfolio-slide -->
-                <div class="portfolio-slide swiper-slide">
-                    <img src="img/portfolio/application.png" alt="Image: application" class="portfolio-slide__image">
-                    <div class="portfolio-slide-description">
-                        <div class="h5 portfolio-slide-description__title-mini">Приложения, Мобильные, iOS</div>
-                        <!-- /.h5 portfolio-slide__title-mini -->
-                        <h2 class="portfolio-slide-description__title">Проекты приложений</h2>
-                        <!-- /.portfolio-slide__title -->
-                    </div>
-                    <!-- /.portfolio-slide-description -->
-                </div>
-                <!-- /.portfolio-slide -->
-                <div class="portfolio-slide swiper-slide">
-                    <img src="img/portfolio/progect.png" alt="Image: Landingpage" class="portfolio-slide__image">
-                    <div class="portfolio-slide-description">
-                        <div class="h5 portfolio-slide-description__title-mini">Instagram</div>
-                        <!-- /.h5 portfolio-slide__title-mini -->
-                        <h2 class="portfolio-slide-description__title">Проект Иллюстраций</h2>
-                        <!-- /.portfolio-slide__title -->
-                    </div>
-                    <!-- /.portfolio-slide-description -->
-                </div>
-                <!-- /.portfolio-slide -->
-                <div class="portfolio-slide swiper-slide">
-                    <img src="img/portfolio/landing.png" alt="Image: Landingpage" class="portfolio-slide__image">
-                    <div class="portfolio-slide-description">
-                        <div class="h5 portfolio-slide-description__title-mini">Вебсайт, Лендинг</div>
-                        <!-- /.h5 portfolio-slide__title-mini -->
-                        <h2 class="portfolio-slide-description__title">Проект Вебсайта</h2>
-                        <!-- /.portfolio-slide__title -->
-                    </div>
-                    <!-- /.portfolio-slide-description -->
-                </div>
-                <!-- /.portfolio-slide -->
-                <div class="portfolio-slide swiper-slide">
-                    <img src="img/portfolio/design.png" alt="Image: design" class="portfolio-slide__image">
-                    <div class="portfolio-slide-description">
-                        <div class="h5 portfolio-slide-description__title-mini">Паенль навигации, UI/UX Дизайн</div>
-                        <!-- /.h5 portfolio-slide__title-mini -->
-                        <h2 class="portfolio-slide-description__title">Проект Дизайна</h2>
-                        <!-- /.portfolio-slide__title -->
-                    </div>
-                    <!-- /.portfolio-slide-description -->
-                </div>
-                <!-- /.portfolio-slide -->
-                <div class="portfolio-slide swiper-slide">
-                    <img src="img/portfolio/application.png" alt="Image: application" class="portfolio-slide__image">
-                    <div class="portfolio-slide-description">
-                        <div class="h5 portfolio-slide-description__title-mini">Приложения, Мобильные, iOS</div>
-                        <!-- /.h5 portfolio-slide__title-mini -->
-                        <h2 class="portfolio-slide-description__title">Проекты приложений</h2>
-                        <!-- /.portfolio-slide__title -->
-                    </div>
-                    <!-- /.portfolio-slide-description -->
-                </div>
-                <!-- /.portfolio-slide -->
-                <div class="portfolio-slide swiper-slide">
-                    <img src="img/portfolio/progect.png" alt="Image: Landingpage" class="portfolio-slide__image">
-                    <div class="portfolio-slide-description">
-                        <div class="h5 portfolio-slide-description__title-mini">Instagram</div>
-                        <!-- /.h5 portfolio-slide__title-mini -->
-                        <h2 class="portfolio-slide-description__title">Проект Иллюстраций</h2>
-                        <!-- /.portfolio-slide__title -->
-                    </div>
-                    <!-- /.portfolio-slide-description -->
-                </div>
-                <!-- /.portfolio-slide -->
-
-            </div>
-            <!-- /.swiper-wrapper -->
-
-        </div>
-        <!-- /.portfolio-slider -->
-    </section>
-    <!-- /.portfolio -->
-    <section id="portfolioMobile" class="portfolio-mobile">
-        <div class="container">
-            <div class="portfolio-mobile-wrapper">
-                <div class="portfolio-description">
-                    <h4 class="portfolio-description__title-mini">портфолио</h4>
-                    <!-- /.portfolio__title-mini -->
-                    <h2 class="portfolio-description__title">Наши проекты</h2>
-                    <!-- /.portfolio__title -->
-                </div>
-                <!-- /.portfolio-description -->
-                <div class="portfolio-slider portfolio-mobile-slider">
-                    <div class="portfolio-slide">
+            <!-- /.container -->
+            <div data-aos="fade-up" class="portfolio-slider swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="portfolio-slide swiper-slide">
                         <img src="img/portfolio/landing.png" alt="Image: Landingpage" class="portfolio-slide__image">
                         <div class="portfolio-slide-description">
                             <div class="h5 portfolio-slide-description__title-mini">Вебсайт, Лендинг</div>
@@ -376,10 +272,11 @@
                         <!-- /.portfolio-slide-description -->
                     </div>
                     <!-- /.portfolio-slide -->
-                    <div class="portfolio-slide">
+                    <div class="portfolio-slide swiper-slide">
                         <img src="img/portfolio/design.png" alt="Image: design" class="portfolio-slide__image">
                         <div class="portfolio-slide-description">
-                            <div class="h5 portfolio-slide-description__title-mini"><span class="title-mini-hidden">Паенль навигации,</span>UI/UX Дизайн</div>
+                            <div class="h5 portfolio-slide-description__title-mini">Паенль навигации, UI/UX Дизайн
+                            </div>
                             <!-- /.h5 portfolio-slide__title-mini -->
                             <h2 class="portfolio-slide-description__title">Проект Дизайна</h2>
                             <!-- /.portfolio-slide__title -->
@@ -387,12 +284,12 @@
                         <!-- /.portfolio-slide-description -->
                     </div>
                     <!-- /.portfolio-slide -->
-                    <div class="portfolio-slide">
+                    <div class="portfolio-slide swiper-slide">
                         <img src="img/portfolio/application.png" alt="Image: application" class="portfolio-slide__image">
                         <div class="portfolio-slide-description">
                             <div class="h5 portfolio-slide-description__title-mini">Приложения, Мобильные, iOS</div>
                             <!-- /.h5 portfolio-slide__title-mini -->
-                            <h2 class="portfolio-slide-description__title">Проекты Приложений</h2>
+                            <h2 class="portfolio-slide-description__title">Проекты приложений</h2>
                             <!-- /.portfolio-slide__title -->
                         </div>
                         <!-- /.portfolio-slide-description -->
@@ -403,7 +300,52 @@
                         <div class="portfolio-slide-description">
                             <div class="h5 portfolio-slide-description__title-mini">Instagram</div>
                             <!-- /.h5 portfolio-slide__title-mini -->
-                            <h2 class="portfolio-slide-description__title">Проект иллюстраций</h2>
+                            <h2 class="portfolio-slide-description__title">Проект Иллюстраций</h2>
+                            <!-- /.portfolio-slide__title -->
+                        </div>
+                        <!-- /.portfolio-slide-description -->
+                    </div>
+                    <!-- /.portfolio-slide -->
+                    <div class="portfolio-slide swiper-slide">
+                        <img src="img/portfolio/landing.png" alt="Image: Landingpage" class="portfolio-slide__image">
+                        <div class="portfolio-slide-description">
+                            <div class="h5 portfolio-slide-description__title-mini">Вебсайт, Лендинг</div>
+                            <!-- /.h5 portfolio-slide__title-mini -->
+                            <h2 class="portfolio-slide-description__title">Проект Вебсайта</h2>
+                            <!-- /.portfolio-slide__title -->
+                        </div>
+                        <!-- /.portfolio-slide-description -->
+                    </div>
+                    <!-- /.portfolio-slide -->
+                    <div class="portfolio-slide swiper-slide">
+                        <img src="img/portfolio/design.png" alt="Image: design" class="portfolio-slide__image">
+                        <div class="portfolio-slide-description">
+                            <div class="h5 portfolio-slide-description__title-mini">Паенль навигации, UI/UX Дизайн
+                            </div>
+                            <!-- /.h5 portfolio-slide__title-mini -->
+                            <h2 class="portfolio-slide-description__title">Проект Дизайна</h2>
+                            <!-- /.portfolio-slide__title -->
+                        </div>
+                        <!-- /.portfolio-slide-description -->
+                    </div>
+                    <!-- /.portfolio-slide -->
+                    <div class="portfolio-slide swiper-slide">
+                        <img src="img/portfolio/application.png" alt="Image: application" class="portfolio-slide__image">
+                        <div class="portfolio-slide-description">
+                            <div class="h5 portfolio-slide-description__title-mini">Приложения, Мобильные, iOS</div>
+                            <!-- /.h5 portfolio-slide__title-mini -->
+                            <h2 class="portfolio-slide-description__title">Проекты приложений</h2>
+                            <!-- /.portfolio-slide__title -->
+                        </div>
+                        <!-- /.portfolio-slide-description -->
+                    </div>
+                    <!-- /.portfolio-slide -->
+                    <div class="portfolio-slide swiper-slide">
+                        <img src="img/portfolio/progect.png" alt="Image: Landingpage" class="portfolio-slide__image">
+                        <div class="portfolio-slide-description">
+                            <div class="h5 portfolio-slide-description__title-mini">Instagram</div>
+                            <!-- /.h5 portfolio-slide__title-mini -->
+                            <h2 class="portfolio-slide-description__title">Проект Иллюстраций</h2>
                             <!-- /.portfolio-slide__title -->
                         </div>
                         <!-- /.portfolio-slide-description -->
@@ -411,376 +353,444 @@
                     <!-- /.portfolio-slide -->
 
                 </div>
-                <!-- /.portfolio-slider -->
-            </div>
-            <!-- /.portfolio-wrapper -->
-        </div>
-        <!-- /.container -->
-    </section>
-    <!-- /.portfolio -->
-    <section class="recall">
-        <div class="container">
-            <div class="recall-wrapper">
-                <div class="recall__title-mini">Отзывы</div>
-                <!-- /.recall__title-mini -->
-                <div class="recall__title">Что говорят о нас</div>
-                <!-- /.recall__title -->
-                <div class="recall-slider swiper-container">
-                    <div class="swiper-wrapper">
-                        <div class="recall__slide swiper-slide">
-                            <div class="recall__slide-description">
-                                <img src="img/recall/user-1.png" alt="Image: User" class="recall__slide-avatar">
-                                <div class="recall__slide-user">
-                                    <h3 class="recall__slide-user-name">Jaquon Hart</h3>
-                                    <!-- /.recall__slide-name -->
-                                    <span class="recall__slide-user-profession">Вице-президент - компания Lizlle</span>
-                                    <!-- /.recall__slide-profession -->
-                                </div>
-                            </div>
-                            <!-- /.recall__slide-description -->
-                            <p class="recall__slide-text">
-                                «Их навыки и опыт в области пользовательского интерфейса / пользовательского интерфейса были ключевыми для выявления потенциальных проблемных моментов в наших бизнес-процессах, которые они прекрасно исправили или оптимизировали».
-                            </p>
-                            <!-- /.rcall__slide-text -->
-                        </div>
-                        <!-- /.recall__slide -->
-                        <div class="recall__slide swiper-slide">
-                            <div class="recall__slide-description">
-                                <img src="img/recall/user-2.png" alt="Image: User" class="recall__slide-avatar">
-                                <div class="recall__slide-user">
-                                    <h3 class="recall__slide-user-name">Valdemar Forsberg</h3>
-                                    <!-- /.recall__slide-name -->
-                                    <span class="recall__slide-user-profession">Основатель Digitac Finance</span>
-                                    <!-- /.recall__slide-profession -->
-                                </div>
-                            </div>
-                            <!-- /.recall__slide-description -->
-                            <p class="recall__slide-text">
-                                Ehya подтолкнул нас к мысли, выходящей за рамки наших первоначальных возможностей и воображения, при этом гарантируя, что дизайн и форма платформы постоянно корректируются на основе данных.
-                            </p>
-                            <!-- /.rcall__slide-text -->
-                        </div>
-                        <!-- /.recall__slide -->
-                        <div class="recall__slide swiper-slide">
-                            <div class="recall__slide-description">
-                                <img src="img/recall/user-3.png" alt="Image: User" class="recall__slide-avatar">
-                                <div class="recall__slide-user">
-                                    <h3 class="recall__slide-user-name">Maikl Storm</h3>
-                                    <!-- /.recall__slide-name -->
-                                    <span class="recall__slide-user-profession">Вице-президент - компания Deep
-                                        Food</span>
-                                    <!-- /.recall__slide-profession -->
-                                </div>
-                            </div>
-                            <!-- /.recall__slide-description -->
-                            <p class="recall__slide-text">
-                                Понравился стиль работы, и самое главное полученный результат. Сайт вывели в топ за довольно короткие сроки, единственное им перед этим пришлось повозится, провести анализ и устранить проблемы на самом сайте, но это того стоило. Рекомендую.
-                            </p>
-                            <!-- /.rcall__slide-text -->
-                        </div>
-                        <!-- /.recall__slide -->
-                    </div>
-                    <!-- /.swiper-wrapper -->
-                </div>
-                <button class="recall__slide-button-prev swiper-button-prev"></button>
-                <button class="recall__slide-button-next swiper-button-next"></button>
-            </div>
-            <!-- /.recall-wrapper -->
-        </div>
-        <!-- /.container -->
-    </section>
-    <!-- /.recall -->
-    <section class="social">
-        <div class="container">
-            <div class="social-wrapper">
-                <div class="social__title-mini">Наши соцсети</div>
-                <!-- /.recall__title-mini -->
-                <div class="social__title">Будем друзьями</div>
-                <div class="social-card-wrapper">
-                    <div class="social-card">
-                        <div class="social-card__logo">
-                            <img class="social-card__logo-image" src="img/social/instagram.svg" alt="Icon: instagram">
-                            <!-- /.img social-card__image -->
-                        </div>
-                        <div class="social-card-description">
-                            <h4 class="social-card-description__title">Instagram</h4>
-                            <!-- /.social-card-description__title -->
-                            <p class="social-card-description__text">Для нашего портфолио и повседневных дел в офисе</p>
-                            <!-- /.social-card-description__text -->
-                            <a href="#" class="social-card-description__link">Подписаться
-                                <img src="img/svg/arrow-right-blue.svg" alt=""
-                                    class="social-card-description__link-arrow">
-                            </a>
-                            <!-- /.social-card__link -->
-                        </div>
-                        <!-- /.social-card-description -->
-                    </div>
-                    <!-- /.social-card -->
-                    <div class="social-card">
-                        <div class="social-card__logo">
-                            <img class="social-card__logo-image" src="img/social/twitter.svg" alt="Icon: twitter">
-                            <!-- /.img social-card__image -->
-                        </div>
-                        <div class="social-card-description">
-                            <h4 class="social-card-description__title">Twitter</h4>
-                            <!-- /.social-card-description__title -->
-                            <p class="social-card-description__text">Для случайных мыслей и интересных вещей</p>
-                            <!-- /.social-card-description__text -->
-                            <a href="#" class="social-card-description__link">Подписаться
-                                <img src="img/svg/arrow-right-blue.svg" alt=""
-                                    class="social-card-description__link-arrow">
+                <!-- /.swiper-wrapper -->
 
-                            </a>
-                            <!-- /.social-card__link -->
-                        </div>
-                        <!-- /.social-card-description -->
+            </div>
+            <!-- /.portfolio-slider -->
+        </section>
+        <!-- /.portfolio -->
+        <section id="portfolioMobile" class="portfolio-mobile">
+            <div class="container">
+                <div class="portfolio-mobile-wrapper">
+                    <div class="portfolio-description">
+                        <h4 class="portfolio-description__title-mini">портфолио</h4>
+                        <!-- /.portfolio__title-mini -->
+                        <h2 class="portfolio-description__title">Наши проекты</h2>
+                        <!-- /.portfolio__title -->
                     </div>
-                    <!-- /.social-card -->
-                    <div class="social-card">
-                        <div class="social-card__logo">
-                            <img class="social-card__logo-image" src="img/social/dribbble.svg" alt="Icon: dribbble">
-                            <!-- /.img social-card__image -->
+                    <!-- /.portfolio-description -->
+                    <div class="portfolio-slider portfolio-mobile-slider">
+                        <div data-aos="zoom-out" class="portfolio-slide">
+                            <img src="img/portfolio/landing.png" alt="Image: Landingpage" class="portfolio-slide__image">
+                            <div class="portfolio-slide-description">
+                                <div class="h5 portfolio-slide-description__title-mini">Вебсайт, Лендинг</div>
+                                <!-- /.h5 portfolio-slide__title-mini -->
+                                <h2 class="portfolio-slide-description__title">Проект Вебсайта</h2>
+                                <!-- /.portfolio-slide__title -->
+                            </div>
+                            <!-- /.portfolio-slide-description -->
                         </div>
-                        <div class="social-card-description">
-                            <h4 class="social-card-description__title">Dribbble</h4>
-                            <!-- /.social-card-description__title -->
-                            <p class="social-card-description__text">Для обновленных и подробных всех нашего портфолио
-                            </p>
-                            <!-- /.social-card-description__text -->
-                            <a href="#" class="social-card-description__link">Подписаться
-                                <img src="img/svg/arrow-right-blue.svg" alt=""
-                                    class="social-card-description__link-arrow">
+                        <!-- /.portfolio-slide -->
+                        <div data-aos="zoom-out" class="portfolio-slide">
+                            <img src="img/portfolio/design.png" alt="Image: design" class="portfolio-slide__image">
+                            <div class="portfolio-slide-description">
+                                <div class="h5 portfolio-slide-description__title-mini"><span class="title-mini-hidden">Паенль навигации,</span>UI/UX Дизайн</div>
+                                <!-- /.h5 portfolio-slide__title-mini -->
+                                <h2 class="portfolio-slide-description__title">Проект Дизайна</h2>
+                                <!-- /.portfolio-slide__title -->
+                            </div>
+                            <!-- /.portfolio-slide-description -->
+                        </div>
+                        <!-- /.portfolio-slide -->
+                        <div data-aos="zoom-out" class="portfolio-slide">
+                            <img src="img/portfolio/application.png" alt="Image: application" class="portfolio-slide__image">
+                            <div class="portfolio-slide-description">
+                                <div class="h5 portfolio-slide-description__title-mini">Приложения, Мобильные, iOS
+                                </div>
+                                <!-- /.h5 portfolio-slide__title-mini -->
+                                <h2 class="portfolio-slide-description__title">Проекты Приложений</h2>
+                                <!-- /.portfolio-slide__title -->
+                            </div>
+                            <!-- /.portfolio-slide-description -->
+                        </div>
+                        <!-- /.portfolio-slide -->
+                        <div data-aos="zoom-out" class="portfolio-slide swiper-slide">
+                            <img src="img/portfolio/progect.png" alt="Image: Landingpage" class="portfolio-slide__image">
+                            <div class="portfolio-slide-description">
+                                <div class="h5 portfolio-slide-description__title-mini">Instagram</div>
+                                <!-- /.h5 portfolio-slide__title-mini -->
+                                <h2 class="portfolio-slide-description__title">Проект иллюстраций</h2>
+                                <!-- /.portfolio-slide__title -->
+                            </div>
+                            <!-- /.portfolio-slide-description -->
+                        </div>
+                        <!-- /.portfolio-slide -->
 
-                            </a>
-                            <!-- /.social-card__link -->
-                        </div>
-                        <!-- /.social-card-description -->
                     </div>
-                    <!-- /.social-card -->
-                    <div class="social-card">
-                        <div class="social-card__logo">
-                            <img class="social-card__logo-image" src="img/social/youtube.svg" alt="Icon: Youtube">
-                            <!-- /.img social-card__image -->
-                        </div>
-                        <div class="social-card-description">
-                            <h4 class="social-card-description__title">Youtube</h4>
-                            <!-- /.social-card-description__title -->
-                            <p class="social-card-description__text">Для нашего видео руководства и советах по индустрии дизайна
-                            </p>
-                            <!-- /.social-card-description__text -->
-                            <a href="#" class="social-card-description__link">Подписаться
-                                <img src="img/svg/arrow-right-blue.svg" alt=""
-                                    class="social-card-description__link-arrow">
-                            </a>
-                            <!-- /.social-card__link -->
-                        </div>
-                        <!-- /.social-card-description -->
-                    </div>
-                    <!-- /.social-card -->
+                    <!-- /.portfolio-slider -->
                 </div>
-                <!-- /.social-card-wrapper -->
+                <!-- /.portfolio-wrapper -->
             </div>
-            <!-- /.social-wrapper -->
-        </div>
-        <!-- /.container -->
-    </section>
-    <!-- /.social -->
-    <section class="message">
-        <div class="container">
-            <div class="message-wrapper">
-                <h2 class="message__title">Мы готовы к сложным проектам</h2>
-                <!-- /.message__title -->
-                <p class="message__text">Отправьте нам свой бриф и расскажите о своем проекте. Мы готовы помочь всем, что вам нужно</p>
-                <!-- /.message__text -->
-                <button data-toggle="modal" data-href="#booking-modal" class="message__button">Пообщаемся?</button>
-                <!-- /.message__button -->
+            <!-- /.container -->
+        </section>
+        <!-- /.portfolio -->
+        <section class="recall">
+            <div class="container">
+                <div class="recall-wrapper">
+                    <div class="recall__title-mini">Отзывы</div>
+                    <!-- /.recall__title-mini -->
+                    <div class="recall__title">Что говорят о нас</div>
+                    <!-- /.recall__title -->
+                    <div class="recall-slider swiper-container">
+                        <div class="swiper-wrapper">
+                            <div data-aos="flip-down" data-aos-duration="1000" class="recall__slide swiper-slide">
+                                <div class="recall__slide-description">
+                                    <img src="img/recall/user-1.png" alt="Image: User" class="recall__slide-avatar">
+                                    <div class="recall__slide-user">
+                                        <h3 class="recall__slide-user-name">Jaquon Hart</h3>
+                                        <!-- /.recall__slide-name -->
+                                        <span class="recall__slide-user-profession">Вице-президент - компания
+                                            Lizlle</span>
+                                        <!-- /.recall__slide-profession -->
+                                    </div>
+                                </div>
+                                <!-- /.recall__slide-description -->
+                                <p class="recall__slide-text">
+                                    «Их навыки и опыт в области пользовательского интерфейса / пользовательского интерфейса были ключевыми для выявления потенциальных проблемных моментов в наших бизнес-процессах, которые они прекрасно исправили или оптимизировали».
+                                </p>
+                                <!-- /.rcall__slide-text -->
+                            </div>
+                            <!-- /.recall__slide -->
+                            <div data-aos="flip-down" data-aos-duration="2000" class="recall__slide swiper-slide">
+                                <div class="recall__slide-description">
+                                    <img src="img/recall/user-2.png" alt="Image: User" class="recall__slide-avatar">
+                                    <div class="recall__slide-user">
+                                        <h3 class="recall__slide-user-name">Valdemar Forsberg</h3>
+                                        <!-- /.recall__slide-name -->
+                                        <span class="recall__slide-user-profession">Основатель Digitac Finance</span>
+                                        <!-- /.recall__slide-profession -->
+                                    </div>
+                                </div>
+                                <!-- /.recall__slide-description -->
+                                <p class="recall__slide-text">
+                                    Ehya подтолкнул нас к мысли, выходящей за рамки наших первоначальных возможностей и воображения, при этом гарантируя, что дизайн и форма платформы постоянно корректируются на основе данных.
+                                </p>
+                                <!-- /.rcall__slide-text -->
+                            </div>
+                            <!-- /.recall__slide -->
+                            <div data-aos="flip-down" data-aos-duration="2000" class="recall__slide swiper-slide">
+                                <div class="recall__slide-description">
+                                    <img src="img/recall/user-3.png" alt="Image: User" class="recall__slide-avatar">
+                                    <div class="recall__slide-user">
+                                        <h3 class="recall__slide-user-name">Maikl Storm</h3>
+                                        <!-- /.recall__slide-name -->
+                                        <span class="recall__slide-user-profession">Вице-президент - компания Deep
+                                            Food</span>
+                                        <!-- /.recall__slide-profession -->
+                                    </div>
+                                </div>
+                                <!-- /.recall__slide-description -->
+                                <p class="recall__slide-text">
+                                    Понравился стиль работы, и самое главное полученный результат. Сайт вывели в топ за довольно короткие сроки, единственное им перед этим пришлось повозится, провести анализ и устранить проблемы на самом сайте, но это того стоило. Рекомендую.
+                                </p>
+                                <!-- /.rcall__slide-text -->
+                            </div>
+                            <!-- /.recall__slide -->
+                        </div>
+                        <!-- /.swiper-wrapper -->
+                    </div>
+                    <button class="recall__slide-button-prev swiper-button-prev"></button>
+                    <button class="recall__slide-button-next swiper-button-next"></button>
+                </div>
+                <!-- /.recall-wrapper -->
             </div>
-            <!-- /.message-wrapper -->
-        </div>
-        <!-- /.container -->
-    </section>
-    <!-- /.message -->
-    <section class="footer">
-        <div class="container">
-            <div class="footer-wrapper">
-                <div class="footer-top">
-                    <div class="footer-top-logo">
-                        <img src="img/Logo-white.png" alt="Image: Logo" class="footer-top-logo__image">
-                        <p class="footer-top-logo__text">Создайте современный и креативный веб-сайт с crealand</p>
-                        <!-- /.footer-top-logo__text -->
-                        <ul class="footer-top-logo__social">
-                            <li class="footer-top-logo__social-item">
-                                <a href="#" class="footer-top-logo__social-item__link"><img src="img/social-link/google.svg" alt="Logo: google" class="footer-top-logo__social-item__link-img"></a>
-                                <!-- /.footer-top-logo__social-item__link -->
-                            </li>
-                            <!-- /.footer-top-logo__social-item -->
-                            <li class="footer-top-logo__social-item">
-                                <a href="#" class="footer-top-logo__social-item__link"><img src="img/social-link/twitter.svg" alt="Logo: twitter" class="footer-top-logo__social-item__link-img"></a>
-                                <!-- /.footer-top-logo__social-item__link -->
-                            </li>
-                            <!-- /.footer-top-logo__social-item -->
-                            <li class="footer-top-logo__social-item">
-                                <a href="#" class="footer-top-logo__social-item__link"><img src="img/social-link/instagram.svg" alt="Logo: instagram" class="footer-top-logo__social-item__link-img"></a>
-                                <!-- /.footer-top-logo__social-item__link -->
-                            </li>
-                            <!-- /.footer-top-logo__social-item -->
-                            <li class="footer-top-logo__social-item">
-                                <a href="#" class="footer-top-logo__social-item__link"><img src="img/social-link/linkedin.svg" alt="Logo: linkedin" class="footer-top-logo__social-item__link-img"></a>
-                                <!-- /.footer-top-logo__social-item__link -->
-                            </li>
-                            <!-- /.footer-top-logo__social-item -->
-                            <li class="footer-top-logo__social-item">
-                                <a href="#" class="footer-top-logo__social-item__link"><img src="img/social-link/youtube.svg" alt="Logo: youtube" class="footer-top-logo__social-item__link-img"></a>
-                                <!-- /.footer-top-logo__social-item__link -->
-                            </li>
-                            <!-- /.footer-top-logo__social-item -->
-                        </ul>
-                        <!-- /.footer-top-logo__social -->
-                    </div>
-                    <!-- /.footer-top-logo -->
-                    <div class="footer-list footer-list-product">
-                        <h3 class="footer-list__title">Продукт</h3>
-                        <!-- /.footer-list__title -->
-                        <ul class="footer-list__category">
-                            <li class="footer-list__category-item">
-                                <a href="" class="footer-list__category-link">Лендинг</a>
-                                <!-- /.footer-list__category-link -->
-                            </li>
-                            <!-- /.footer-list__category-item -->
-                            <li class="footer-list__category-item">
-                                <a href="" class="footer-list__category-link">Функции</a>
-                                <!-- /.footer-list__category-link -->
-                            </li>
-                            <!-- /.footer-list__category-item -->
-                            <li class="footer-list__category-item">
-                                <a href="" class="footer-list__category-link">Документация</a>
-                                <!-- /.footer-list__category-link -->
-                            </li>
-                            <!-- /.footer-list__category-item -->
-                            <li class="footer-list__category-item">
-                                <a href="" class="footer-list__category-link">Скидки</a>
-                                <!-- /.footer-list__category-link -->
-                            </li>
-                            <!-- /.footer-list__category-item -->
-                            <li class="footer-list__category-item">
-                                <a href="" class="footer-list__category-link">Расценки</a>
-                                <!-- /.footer-list__category-link -->
-                            </li>
-                            <!-- /.footer-list__category-item -->
-                        </ul>
-                        <!-- /.footer-list__category -->
-                    </div>
-                    <!-- /.footer-list -->
-                    <div class="footer-list">
-                        <h3 class="footer-list__title">Сервисы</h3>
-                        <!-- /.footer-list__title -->
-                        <ul class="footer-list__category">
-                            <li class="footer-list__category-item">
-                                <a href="" class="footer-list__category-link">Документация</a>
-                                <!-- /.footer-list__category-link -->
-                            </li>
-                            <!-- /.footer-list__category-item -->
-                            <li class="footer-list__category-item">
-                                <a href="" class="footer-list__category-link">Дизайн</a>
-                                <!-- /.footer-list__category-link -->
-                            </li>
-                            <!-- /.footer-list__category-item -->
-                            <li class="footer-list__category-item">
-                                <a href="" class="footer-list__category-link">Темы</a>
-                                <!-- /.footer-list__category-link -->
-                            </li>
-                            <!-- /.footer-list__category-item -->
-                            <li class="footer-list__category-item">
-                                <a href="" class="footer-list__category-link">Иллюстрации</a>
-                                <!-- /.footer-list__category-link -->
-                            </li>
-                            <!-- /.footer-list__category-item -->
-                            <li class="footer-list__category-item">
-                                <a href="" class="footer-list__category-link">UI Kit</a>
-                                <!-- /.footer-list__category-link -->
-                            </li>
-                            <!-- /.footer-list__category-item -->
-                        </ul>
-                        <!-- /.footer-list__category -->
-                    </div>
-                    <!-- /.footer-list -->
-                    <div class="footer-list">
-                        <h3 class="footer-list__title">Компания</h3>
-                        <!-- /.footer-list__title -->
-                        <ul class="footer-list__category">
-                            <li class="footer-list__category-item">
-                                <a href="" class="footer-list__category-link">О нас</a>
-                                <!-- /.footer-list__category-link -->
-                            </li>
-                            <!-- /.footer-list__category-item -->
-                            <li class="footer-list__category-item">
-                                <a href="" class="footer-list__category-link">Условия</a>
-                                <!-- /.footer-list__category-link -->
-                            </li>
-                            <!-- /.footer-list__category-item -->
-                            <li class="footer-list__category-item">
-                                <a href="" class="footer-list__category-link footer-list__category-link--hidden">Политика
-                                    конфиденциальности
+            <!-- /.container -->
+        </section>
+        <!-- /.recall -->
+        <section class="social">
+            <div class="container">
+                <div class="social-wrapper">
+                    <div class="social__title-mini">Наши соцсети</div>
+                    <!-- /.recall__title-mini -->
+                    <div class="social__title">Будем друзьями</div>
+                    <div class="social-card-wrapper">
+                        <div data-aos="zoom-out" data-aos-duration="2000" class="social-card">
+                            <div class="social-card__logo">
+                                <img class="social-card__logo-image" src="img/social/instagram.svg" alt="Icon: instagram">
+                                <!-- /.img social-card__image -->
+                            </div>
+                            <div class="social-card-description">
+                                <h4 class="social-card-description__title">Instagram</h4>
+                                <!-- /.social-card-description__title -->
+                                <p class="social-card-description__text">Для нашего портфолио и повседневных дел в офисе
+                                </p>
+                                <!-- /.social-card-description__text -->
+                                <a href="#" class="social-card-description__link">Подписаться
+                                    <img src="img/svg/arrow-right-blue.svg" alt=""
+                                        class="social-card-description__link-arrow">
                                 </a>
-                                <!-- /.footer-list__category-link -->
-                            </li>
-                            <li class="footer-list__category-item">
-                                <a href="" class="footer-list__category-link footer-list__category-link--visible">Privacy
-                                    Policy
+                                <!-- /.social-card__link -->
+                            </div>
+                            <!-- /.social-card-description -->
+                        </div>
+                        <!-- /.social-card -->
+                        <div data-aos="zoom-out" data-aos-duration="2000" class="social-card">
+                            <div class="social-card__logo">
+                                <img class="social-card__logo-image" src="img/social/twitter.svg" alt="Icon: twitter">
+                                <!-- /.img social-card__image -->
+                            </div>
+                            <div class="social-card-description">
+                                <h4 class="social-card-description__title">Twitter</h4>
+                                <!-- /.social-card-description__title -->
+                                <p class="social-card-description__text">Для случайных мыслей и интересных вещей</p>
+                                <!-- /.social-card-description__text -->
+                                <a href="#" class="social-card-description__link">Подписаться
+                                    <img src="img/svg/arrow-right-blue.svg" alt=""
+                                        class="social-card-description__link-arrow">
+
                                 </a>
-                                <!-- /.footer-list__category-link -->
-                            </li>
-                            <!-- /.footer-list__category-item -->
-                            <li class="footer-list__category-item">
-                                <a href="" class="footer-list__category-link">Careers</a>
-                                <!-- /.footer-list__category-link -->
-                            </li>
-                            <!-- /.footer-list__category-item -->
-                        </ul>
-                        <!-- /.footer-list__category -->
+                                <!-- /.social-card__link -->
+                            </div>
+                            <!-- /.social-card-description -->
+                        </div>
+                        <!-- /.social-card -->
+                        <div data-aos="zoom-out" data-aos-duration="2000" class="social-card">
+                            <div class="social-card__logo">
+                                <img class="social-card__logo-image" src="img/social/dribbble.svg" alt="Icon: dribbble">
+                                <!-- /.img social-card__image -->
+                            </div>
+                            <div class="social-card-description">
+                                <h4 class="social-card-description__title">Dribbble</h4>
+                                <!-- /.social-card-description__title -->
+                                <p class="social-card-description__text">Для обновленных и подробных всех нашего портфолио
+                                </p>
+                                <!-- /.social-card-description__text -->
+                                <a href="#" class="social-card-description__link">Подписаться
+                                    <img src="img/svg/arrow-right-blue.svg" alt=""
+                                        class="social-card-description__link-arrow">
+
+                                </a>
+                                <!-- /.social-card__link -->
+                            </div>
+                            <!-- /.social-card-description -->
+                        </div>
+                        <!-- /.social-card -->
+                        <div data-aos="zoom-out" data-aos-duration="2000" class="social-card">
+                            <div class="social-card__logo">
+                                <img class="social-card__logo-image" src="img/social/youtube.svg" alt="Icon: Youtube">
+                                <!-- /.img social-card__image -->
+                            </div>
+                            <div class="social-card-description">
+                                <h4 class="social-card-description__title">Youtube</h4>
+                                <!-- /.social-card-description__title -->
+                                <p class="social-card-description__text">Для нашего видео руководства и советах по индустрии дизайна
+                                </p>
+                                <!-- /.social-card-description__text -->
+                                <a href="#" class="social-card-description__link">Подписаться
+                                    <img src="img/svg/arrow-right-blue.svg" alt=""
+                                        class="social-card-description__link-arrow">
+                                </a>
+                                <!-- /.social-card__link -->
+                            </div>
+                            <!-- /.social-card-description -->
+                        </div>
+                        <!-- /.social-card -->
                     </div>
-                    <!-- /.footer-list -->
-                    <div class="footer-list">
-                        <h3 class="footer-list__title footer-list__title--hidden">Более</h3>
-                        <!-- /.footer-list__title -->
-                        <h3 class="footer-list__title footer-list__title--visible">Ещё..</h3>
-                        <!-- /.footer-list__title -->
-                        <ul class="footer-list__category">
-                            <li class="footer-list__category-item">
-                                <a href="" class="footer-list__category-link">Документация</a>
-                                <!-- /.footer-list__category-link -->
-                            </li>
-                            <!-- /.footer-list__category-item -->
-                            <li class="footer-list__category-item">
-                                <a href="" class="footer-list__category-link">Лицензия</a>
-                                <!-- /.footer-list__category-link -->
-                            </li>
-                            <!-- /.footer-list__category-item -->
-                            <li class="footer-list__category-item">
-                                <a href="" class="footer-list__category-link">Измененния</a>
-                                <!-- /.footer-list__category-link -->
-                            </li>
-                            <!-- /.footer-list__category-item -->
-                        </ul>
-                        <!-- /.footer-list__category -->
-                    </div>
-                    <!-- /.footer-list -->
+                    <!-- /.social-card-wrapper -->
                 </div>
-                <!-- /.footer-top -->
-                <div class="footer-bottom">
-                    <div class="footer-bottom__logo">
-                        <img src="img/svg/heart.svg" alt="Logo: heart" class="footer-bottom__logo-image">
-                    </div>
-                    <!-- /.footer-bottom__logo -->
-                    <span class="footer-bottom__text">Copyright © 2019. Crafted with love.</span>
-                </div>
-                <!-- /.footer-bottom -->
+                <!-- /.social-wrapper -->
             </div>
-            <!-- /.footer-wrapper -->
-        </div>
-        <!-- /.container -->
-    </section>
-    <!-- /.footer -->
+            <!-- /.container -->
+        </section>
+        <!-- /.social -->
+        <section class="message">
+            <div class="container">
+                <div class="message-wrapper">
+                    <h2 class="message__title">Мы готовы к сложным проектам</h2>
+                    <!-- /.message__title -->
+                    <p class="message__text">Отправьте нам свой бриф и расскажите о своем проекте. Мы готовы помочь всем, что вам нужно</p>
+                    <!-- /.message__text -->
+                    <button data-toggle="modal" data-href="#booking-modal" class="message__button">Пообщаемся?</button>
+                    <!-- /.message__button -->
+                </div>
+                <!-- /.message-wrapper -->
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /.message -->
+        <section class="footer">
+            <div class="container">
+                <div class="footer-wrapper">
+                    <div class="footer-top">
+                        <div class="footer-top-logo">
+                            <img src="img/Logo-white.png" alt="Image: Logo" class="footer-top-logo__image">
+                            <p class="footer-top-logo__text">Создайте современный и креативный веб-сайт с crealand</p>
+                            <!-- /.footer-top-logo__text -->
+                            <ul class="footer-top-logo__social">
+                                <li class="footer-top-logo__social-item">
+                                    <a href="#" class="footer-top-logo__social-item__link"><img src="img/social-link/google.svg" alt="Logo: google" class="footer-top-logo__social-item__link-img"></a>
+                                    <!-- /.footer-top-logo__social-item__link -->
+                                </li>
+                                <!-- /.footer-top-logo__social-item -->
+                                <li class="footer-top-logo__social-item">
+                                    <a href="#" class="footer-top-logo__social-item__link"><img src="img/social-link/twitter.svg" alt="Logo: twitter" class="footer-top-logo__social-item__link-img"></a>
+                                    <!-- /.footer-top-logo__social-item__link -->
+                                </li>
+                                <!-- /.footer-top-logo__social-item -->
+                                <li class="footer-top-logo__social-item">
+                                    <a href="#" class="footer-top-logo__social-item__link"><img src="img/social-link/instagram.svg" alt="Logo: instagram" class="footer-top-logo__social-item__link-img"></a>
+                                    <!-- /.footer-top-logo__social-item__link -->
+                                </li>
+                                <!-- /.footer-top-logo__social-item -->
+                                <li class="footer-top-logo__social-item">
+                                    <a href="#" class="footer-top-logo__social-item__link"><img src="img/social-link/linkedin.svg" alt="Logo: linkedin" class="footer-top-logo__social-item__link-img"></a>
+                                    <!-- /.footer-top-logo__social-item__link -->
+                                </li>
+                                <!-- /.footer-top-logo__social-item -->
+                                <li class="footer-top-logo__social-item">
+                                    <a href="#" class="footer-top-logo__social-item__link"><img src="img/social-link/youtube.svg" alt="Logo: youtube" class="footer-top-logo__social-item__link-img"></a>
+                                    <!-- /.footer-top-logo__social-item__link -->
+                                </li>
+                                <!-- /.footer-top-logo__social-item -->
+                            </ul>
+                            <!-- /.footer-top-logo__social -->
+                        </div>
+                        <!-- /.footer-top-logo -->
+                        <div class="footer-list footer-list-product">
+                            <h3 class="footer-list__title">Продукт</h3>
+                            <!-- /.footer-list__title -->
+                            <ul class="footer-list__category">
+                                <li class="footer-list__category-item">
+                                    <a href="" class="footer-list__category-link">Лендинг</a>
+                                    <!-- /.footer-list__category-link -->
+                                </li>
+                                <!-- /.footer-list__category-item -->
+                                <li class="footer-list__category-item">
+                                    <a href="" class="footer-list__category-link">Функции</a>
+                                    <!-- /.footer-list__category-link -->
+                                </li>
+                                <!-- /.footer-list__category-item -->
+                                <li class="footer-list__category-item">
+                                    <a href="" class="footer-list__category-link">Документация</a>
+                                    <!-- /.footer-list__category-link -->
+                                </li>
+                                <!-- /.footer-list__category-item -->
+                                <li class="footer-list__category-item">
+                                    <a href="" class="footer-list__category-link">Скидки</a>
+                                    <!-- /.footer-list__category-link -->
+                                </li>
+                                <!-- /.footer-list__category-item -->
+                                <li class="footer-list__category-item">
+                                    <a href="" class="footer-list__category-link">Расценки</a>
+                                    <!-- /.footer-list__category-link -->
+                                </li>
+                                <!-- /.footer-list__category-item -->
+                            </ul>
+                            <!-- /.footer-list__category -->
+                        </div>
+                        <!-- /.footer-list -->
+                        <div class="footer-list">
+                            <h3 class="footer-list__title">Сервисы</h3>
+                            <!-- /.footer-list__title -->
+                            <ul class="footer-list__category">
+                                <li class="footer-list__category-item">
+                                    <a href="" class="footer-list__category-link">Документация</a>
+                                    <!-- /.footer-list__category-link -->
+                                </li>
+                                <!-- /.footer-list__category-item -->
+                                <li class="footer-list__category-item">
+                                    <a href="" class="footer-list__category-link">Дизайн</a>
+                                    <!-- /.footer-list__category-link -->
+                                </li>
+                                <!-- /.footer-list__category-item -->
+                                <li class="footer-list__category-item">
+                                    <a href="" class="footer-list__category-link">Темы</a>
+                                    <!-- /.footer-list__category-link -->
+                                </li>
+                                <!-- /.footer-list__category-item -->
+                                <li class="footer-list__category-item">
+                                    <a href="" class="footer-list__category-link">Иллюстрации</a>
+                                    <!-- /.footer-list__category-link -->
+                                </li>
+                                <!-- /.footer-list__category-item -->
+                                <li class="footer-list__category-item">
+                                    <a href="" class="footer-list__category-link">UI Kit</a>
+                                    <!-- /.footer-list__category-link -->
+                                </li>
+                                <!-- /.footer-list__category-item -->
+                            </ul>
+                            <!-- /.footer-list__category -->
+                        </div>
+                        <!-- /.footer-list -->
+                        <div class="footer-list">
+                            <h3 class="footer-list__title">Компания</h3>
+                            <!-- /.footer-list__title -->
+                            <ul class="footer-list__category">
+                                <li class="footer-list__category-item">
+                                    <a href="" class="footer-list__category-link">О нас</a>
+                                    <!-- /.footer-list__category-link -->
+                                </li>
+                                <!-- /.footer-list__category-item -->
+                                <li class="footer-list__category-item">
+                                    <a href="" class="footer-list__category-link">Условия</a>
+                                    <!-- /.footer-list__category-link -->
+                                </li>
+                                <!-- /.footer-list__category-item -->
+                                <li class="footer-list__category-item">
+                                    <a href="" class="footer-list__category-link footer-list__category-link--hidden">Политика
+                                        конфиденциальности
+                                    </a>
+                                    <!-- /.footer-list__category-link -->
+                                </li>
+                                <li class="footer-list__category-item">
+                                    <a href="" class="footer-list__category-link footer-list__category-link--visible">Privacy
+                                        Policy
+                                    </a>
+                                    <!-- /.footer-list__category-link -->
+                                </li>
+                                <!-- /.footer-list__category-item -->
+                                <li class="footer-list__category-item">
+                                    <a href="" class="footer-list__category-link">Careers</a>
+                                    <!-- /.footer-list__category-link -->
+                                </li>
+                                <!-- /.footer-list__category-item -->
+                            </ul>
+                            <!-- /.footer-list__category -->
+                        </div>
+                        <!-- /.footer-list -->
+                        <div class="footer-list">
+                            <h3 class="footer-list__title footer-list__title--hidden">Более</h3>
+                            <!-- /.footer-list__title -->
+                            <h3 class="footer-list__title footer-list__title--visible">Ещё..</h3>
+                            <!-- /.footer-list__title -->
+                            <ul class="footer-list__category">
+                                <li class="footer-list__category-item">
+                                    <a href="" class="footer-list__category-link">Документация</a>
+                                    <!-- /.footer-list__category-link -->
+                                </li>
+                                <!-- /.footer-list__category-item -->
+                                <li class="footer-list__category-item">
+                                    <a href="" class="footer-list__category-link">Лицензия</a>
+                                    <!-- /.footer-list__category-link -->
+                                </li>
+                                <!-- /.footer-list__category-item -->
+                                <li class="footer-list__category-item">
+                                    <a href="" class="footer-list__category-link">Измененния</a>
+                                    <!-- /.footer-list__category-link -->
+                                </li>
+                                <!-- /.footer-list__category-item -->
+                            </ul>
+                            <!-- /.footer-list__category -->
+                        </div>
+                        <!-- /.footer-list -->
+                    </div>
+                    <!-- /.footer-top -->
+                    <div class="footer-bottom">
+                        <div class="footer-bottom__logo">
+                            <img src="img/svg/heart.svg" alt="Logo: heart" class="footer-bottom__logo-image">
+                        </div>
+                        <!-- /.footer-bottom__logo -->
+                        <span class="footer-bottom__text">Copyright © 2019. Crafted with love.</span>
+                    </div>
+                    <!-- /.footer-bottom -->
+                </div>
+                <!-- /.footer-wrapper -->
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /.footer -->
+    </div>
+    <!-- /.pages -->
 
     <div class="modal" id="booking-modal">
         <div class="modal__overlay">
@@ -809,6 +819,7 @@
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.mask.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
 </body>
 
