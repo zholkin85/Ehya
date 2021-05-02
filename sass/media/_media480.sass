@@ -2,7 +2,7 @@
     .container
         width: 93%
     .header
-        padding: 17px 0 17px 0
+        padding: 17px 8px 17px 6px
         &__nav
             width: 100%
             top: 55px
@@ -21,7 +21,7 @@
                 &-thank
                     grid-template-rows: 1fr
         &-description
-            max-width: 100%
+            max-width: 96%
         &__title
             font-size: 30px
             line-height: 36px
@@ -55,7 +55,7 @@
         &__title
             font-size: 28px
             line-height: 29px
-            max-width: 100%
+            max-width: 96%
             margin-bottom: 15px
         &__text
             font-size: 17px
@@ -65,9 +65,10 @@
             margin-bottom: 10px
         &-logo
             column-gap: 31px
-            max-width: 82%
+            max-width: 78%
     .working
-        margin-bottom: 22px
+        margin-bottom: 50px
+        padding-bottom: 37px
         &-description
             margin-bottom: 6px
         &__title
@@ -83,15 +84,15 @@
             &-card
                 grid-row-gap: 4px
         &-card
+            flex-direction: column
+            height: 199px
+            width: 276px
+            padding: 18px 17px 20px 20px
             &-design
-                padding: 15px 20px 20px 17px
+                padding: 20px 20px 20px 14px
                 grid-row: 5
             &-study
-                padding: 12px 20px 20px 24px
-                height: 200px
-            height: 200px
-            flex-direction: column
-            padding: 15px 20px 20px 24px
+                padding: 16px 20px 20px 23px
             &__image
                 margin-bottom: 16px
             &__title
@@ -117,7 +118,7 @@
                 height: 300px
             &-description
                 text-align: center
-                padding: 34px 0px
+                padding: 32px 0px
                 height: 109px
                 &__title
                     &-mini
@@ -136,10 +137,12 @@
             line-height: 36px
             &-mini
                 text-align: center
+                margin-left: -14px
         &__slide
-            padding: 11px
+            max-width: 289px
+            padding: 8px
             padding-left: 8px
-            padding-top: 25px
+            padding-top: 29px
             max-height: 360px
             height: auto
             &-description
@@ -165,11 +168,13 @@
             &-button
                 &-prev,
                 &-next
-                    top: 108%
+                    top: 109%
+                    width: 50px
+                    height: 50px
                 &-prev
                     left: 20%
                 &-next
-                    right: 40%
+                    right: 41%
     .swiper
         &-wrapper
             height: 360px
@@ -178,11 +183,16 @@
         &__title
             font-size: 28px
             line-height: 36px
-            margin-bottom: 35px
+            margin-bottom: 32px
+            &-mini
+                margin-bottom: 26px
         &-card
             &-wrapper
                 column-gap: 20px
                 grid-row-gap: 32px
+                padding-right: 10px
+                padding-left: 10px
+                margin-left: -1px
             &__logo
                 width: 48px
                 height: 48px
@@ -207,6 +217,7 @@
             font-size: 28px
             line-height: 30px
         &__text
+            max-width: 280px
             margin-bottom: 11px
             font-size: 16px
             line-height: 27px
@@ -222,6 +233,8 @@
         &-top
             grid-template-columns: 1fr 1fr
             column-gap: 13px
+            padding-left: 9px
+            padding-right: 9px
             &-logo
                 grid-row: 4/4;
                 grid-column: span 2
