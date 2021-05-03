@@ -71,14 +71,21 @@ $(document).ready(function() {
         resizeReInit: true,
         breakpoints: {
             992: {
-                slidesPerView: 3,
+                slidesPerView: 'auto',
                 spaceBetween: 30,
+                autoHeight: true,
             },
             1200: {
-                slidesPerView: 2,
+                slidesPerView: 'auto',
+                autoHeight: true,
             },
             1440: {
+                slidesPerView: 'auto',
+                autoHeight: true,
+            },
+            1560: {
                 slidesPerView: 4,
+                autoHeight: true,
             },
         },
 
@@ -100,7 +107,7 @@ $(document).ready(function() {
         breakpoints: {
             992: {
                 slidesPerView: 2,
-                spaceBetween: 30,
+                spaceBetween: 20,
             },
             1200: {
                 slidesPerView: 2,
